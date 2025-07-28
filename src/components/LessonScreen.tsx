@@ -551,10 +551,10 @@ const LessonScreen: React.FC = () => {
                 transition={{ delay: 0.1 }}
                 className="bg-gradient-to-r from-forest-900/50 to-savanna-900/50 rounded-xl p-10 backdrop-blur-savanna border-2 border-forest-500/30 shadow-xl"
               >
-                                                   <h2 className="text-sm font-bold mb-2 ubuntu-text text-forest-300 text-center">
+                                                   <h2 className="text-lg font-bold mb-3 ubuntu-text text-forest-300 text-center">
                     🌱 In This Lesson
                   </h2>
-                 <p className="text-sm african-text text-gray-200 leading-relaxed text-center">
+                 <p className="text-base african-text text-gray-200 leading-relaxed text-center">
                    {lesson.content.introduction}
                  </p>
               </motion.div>
@@ -566,10 +566,10 @@ const LessonScreen: React.FC = () => {
                 transition={{ delay: 0.3 }}
                 className="text-center mb-8"
               >
-                                 <h3 className="text-sm font-bold ubuntu-text text-savanna-300 mb-2">
+                                 <h3 className="text-base font-bold ubuntu-text text-savanna-300 mb-3">
                    📚 Key Concepts
                  </h3>
-                 <p className="text-xs text-gray-400 african-text">
+                 <p className="text-sm text-gray-400 african-text">
                    Explore these fundamental ideas that connect African wisdom to neural networks
                  </p>
               </motion.div>
@@ -591,36 +591,36 @@ const LessonScreen: React.FC = () => {
                       }
                     }}
                   >
-                                       <h3 className="text-sm font-semibold mb-3 ubuntu-text text-forest-300">
-                      {concept.title}
-                    </h3>
+                                                            <h3 className="text-base font-semibold mb-4 ubuntu-text text-forest-300">
+                       {concept.title}
+                     </h3>
                     
                     <div className="space-y-3">
                       <div>
-                        <h4 className="text-xs font-medium text-savanna-400 mb-1">
-                          Understanding
-                        </h4>
-                        <p className="text-xs text-gray-300 african-text leading-relaxed">
-                          {concept.explanation}
-                        </p>
+                                               <h4 className="text-sm font-medium text-savanna-400 mb-2">
+                         Understanding
+                       </h4>
+                       <p className="text-sm text-gray-300 african-text leading-relaxed">
+                         {concept.explanation}
+                       </p>
                       </div>
                       
                       <div>
-                        <h4 className="text-xs font-medium text-savanna-400 mb-1">
-                          Technical Details
-                        </h4>
-                        <p className="text-xs text-gray-400 african-text leading-relaxed font-mono">
-                          {concept.technical}
-                        </p>
+                                               <h4 className="text-sm font-medium text-savanna-400 mb-2">
+                         Technical Details
+                       </h4>
+                       <p className="text-sm text-gray-400 african-text leading-relaxed font-mono">
+                         {concept.technical}
+                       </p>
                       </div>
                       
                       <div>
-                        <h4 className="text-xs font-medium text-savanna-400 mb-1">
-                          Real-World Example
-                        </h4>
-                                                <p className="text-xs text-gray-300 african-text leading-relaxed">
-                           {concept.example}
-                         </p>
+                                               <h4 className="text-sm font-medium text-savanna-400 mb-2">
+                         Real-World Example
+                       </h4>
+                       <p className="text-sm text-gray-300 african-text leading-relaxed">
+                         {concept.example}
+                       </p>
                        </div>
                      </div>
                     <p className="text-sm text-gray-500 mt-4 text-center">
@@ -647,10 +647,10 @@ const LessonScreen: React.FC = () => {
                    }
                  }}
                >
-                                                  <h3 className="text-sm font-semibold mb-2 ubuntu-text text-savanna-300">
+                                                  <h3 className="text-base font-semibold mb-3 ubuntu-text text-savanna-300">
                    Ubuntu Connection
                  </h3>
-                 <p className="text-xs text-gray-300 african-text leading-relaxed italic">
+                 <p className="text-sm text-gray-300 african-text leading-relaxed italic">
                    "{lesson.content.ubuntuConnection}"
                  </p>
                  <p className="text-xs text-gray-500 mt-3 text-center">
@@ -668,7 +668,7 @@ const LessonScreen: React.FC = () => {
                   <div className="flex items-start space-x-2 lg:space-x-4">
                     <div className="text-lg lg:text-2xl">🗣️</div>
                     <div className="flex-1">
-                                                                  <p className="text-xs african-text leading-relaxed">
+                                                                  <p className="text-sm african-text leading-relaxed">
                        {narration}
                      </p>
                       <div className="mt-2 lg:mt-4 flex items-center space-x-2">
@@ -677,7 +677,7 @@ const LessonScreen: React.FC = () => {
                           <div className="w-2 h-2 bg-forest-400 rounded-full"></div>
                           <div className="w-2 h-2 bg-forest-400 rounded-full"></div>
                         </div>
-                                                 <span className="text-xs text-gray-400 african-text">
+                                                 <span className="text-sm text-gray-400 african-text">
                            Ubuntu wisdom
                          </span>
                       </div>
