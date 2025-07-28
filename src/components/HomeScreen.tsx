@@ -45,21 +45,21 @@ const HomeScreen: React.FC = () => {
 
   return (
     <div className="h-full w-full flex flex-col">
-      {/* Header */}
-      <motion.header
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="flex justify-between items-center p-6 backdrop-blur-savanna"
-      >
-        <div>
-          <h1 className="text-2xl font-bold ubuntu-text">The Neural Savanna</h1>
-          <p className="text-sm text-gray-400 african-text">Your AI Learning Journey</p>
-        </div>
-        <BioLumensDisplay 
-          count={gameState.userProgress.bioLumens} 
-          isAnimating={false}
-        />
-      </motion.header>
+             {/* Compact Header */}
+       <motion.header
+         initial={{ opacity: 0, y: -20 }}
+         animate={{ opacity: 1, y: 0 }}
+         className="flex justify-between items-center p-3 backdrop-blur-savanna border-b border-forest-500/20"
+       >
+         <div>
+           <h1 className="text-lg font-bold ubuntu-text leading-tight">The Neural Savanna</h1>
+           <p className="text-xs text-gray-400 african-text leading-tight">Your AI Learning Journey</p>
+         </div>
+         <BioLumensDisplay 
+           count={gameState.userProgress.bioLumens} 
+           isAnimating={false}
+         />
+       </motion.header>
 
       {/* Main content - Mobile-first approach */}
       <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
