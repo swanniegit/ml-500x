@@ -48,6 +48,12 @@ const LessonScreen: React.FC = () => {
       return;
     }
 
+    // Reset lesson state when lesson changes
+    setCurrentStep(0);
+    setBiolumensCollected(0);
+    setShowContinueButton(false);
+    setIsNarrationVisible(false);
+
     // Start lesson narration
     const introNarration = getNarrationById(`lesson${lesson.id}-intro`);
     if (introNarration) {
@@ -155,20 +161,20 @@ const LessonScreen: React.FC = () => {
         console.log('Sound failed to play');
       }
 
-             // Immediately complete lesson on first click
-       setTimeout(() => {
-         setCurrentStep(2);
-         const completionNarration = getNarrationById(`lesson${lesson?.id}-complete`);
-         if (completionNarration) {
-           setNarration(completionNarration.text);
-           setIsNarrationVisible(true);
-           try {
-             playNarration(completionNarration.id);
-           } catch (error) {
-             console.log('Completion narration failed');
-           }
-         }
-       }, 1000);
+                           // Complete lesson after earning bio-lumens
+              setTimeout(() => {
+                setCurrentStep(2);
+                const completionNarration = getNarrationById(`lesson${lesson?.id}-complete`);
+                if (completionNarration) {
+                  setNarration(completionNarration.text);
+                  setIsNarrationVisible(true);
+                  try {
+                    playNarration(completionNarration.id);
+                  } catch (error) {
+                    console.log('Completion narration failed');
+                  }
+                }
+              }, 2000); // Give more time to see the bio-lumens earned
     }
   };
 
