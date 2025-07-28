@@ -488,43 +488,46 @@ const LessonScreen: React.FC = () => {
 
   return (
     <div className="h-full w-full flex flex-col">
-                    {/* Compact Header */}
-        <motion.header
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="flex justify-between items-center p-3 backdrop-blur-savanna border-b border-forest-500/20"
-        >
-          <div className="flex items-center space-x-3">
-            <motion.button
-              className="bg-night-800 hover:bg-night-700 p-2 rounded-lg border border-forest-500/30 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => navigate('/')}
-              title="Return to Home"
-            >
-              <span className="text-lg">🏠</span>
-            </motion.button>
-            <motion.button
-              className="bg-night-800 hover:bg-night-700 p-2 rounded-lg border border-forest-500/30 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => window.close()}
-              title="Exit App"
-            >
-              <span className="text-lg">❌</span>
-            </motion.button>
-          </div>
-          <div className="flex items-center space-x-3">
-            <div className="text-right">
-              <h1 className="text-sm font-bold ubuntu-text leading-tight">{lesson.title}</h1>
-              <p className="text-xs text-gray-400 african-text leading-tight">{lesson.objective}</p>
-            </div>
-            <BioLumensDisplay 
-              count={gameState.userProgress.bioLumens} 
-              isAnimating={biolumensCollected > 0}
-            />
-          </div>
-        </motion.header>
+                           {/* Compact Header */}
+         <motion.header
+           initial={{ opacity: 0, y: -20 }}
+           animate={{ opacity: 1, y: 0 }}
+           className="p-3 backdrop-blur-savanna border-b border-forest-500/20"
+         >
+           {/* Top row: Home, Exit, Bio-lumens */}
+           <div className="flex justify-between items-center mb-3">
+             <div className="flex items-center space-x-3">
+               <motion.button
+                 className="bg-night-800 hover:bg-night-700 p-2 rounded-lg border border-forest-500/30 transition-colors"
+                 whileHover={{ scale: 1.05 }}
+                 whileTap={{ scale: 0.95 }}
+                 onClick={() => navigate('/')}
+                 title="Return to Home"
+               >
+                 <span className="text-lg">🏠</span>
+               </motion.button>
+               <motion.button
+                 className="bg-night-800 hover:bg-night-700 p-2 rounded-lg border border-forest-500/30 transition-colors"
+                 whileHover={{ scale: 1.05 }}
+                 whileTap={{ scale: 0.95 }}
+                 onClick={() => window.close()}
+                 title="Exit App"
+               >
+                 <span className="text-lg">❌</span>
+               </motion.button>
+             </div>
+             <BioLumensDisplay 
+               count={gameState.userProgress.bioLumens} 
+               isAnimating={biolumensCollected > 0}
+             />
+           </div>
+           
+           {/* Bottom row: Full width lesson title and objective */}
+           <div className="w-full">
+             <h1 className="text-lg font-bold ubuntu-text leading-tight">{lesson.title}</h1>
+             <p className="text-sm text-gray-400 african-text leading-tight">{lesson.objective}</p>
+           </div>
+         </motion.header>
 
              {/* Content Section */}
        {lesson.content && currentStep === 0 && (
