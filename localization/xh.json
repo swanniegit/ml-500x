@@ -1,0 +1,36 @@
+{
+  "language": "xh",
+  "name": "isiXhosa",
+  "direction": "ltr",
+  "translations": {
+    "ui": {
+      "loading": "Ilayisha iNeural Savanna...",
+      "start": "Qala Uhambo Lwakho",
+      "continue": "Qhubeka Ukufunda",
+      "pause": "Misa",
+      "resume": "Qhubeka",
+      "restart": "Qala Kabusha",
+      "settings": "Izicwangciso",
+      "help": "Uncedo",
+      "about": "Malunga",
+      "exit": "Phuma"
+    },
+    "narration": {
+      "welcome": "Siyakwamukela kwiNeural Savanna, apho sifunda i-AI ngobulumko base-Afrika.",
+      "lesson1": "Ngendlela ye-Ubuntu, siqala uhambo lwethu kunye. Namhlanje sifunda ngama-neural networks ngobulumko bomthi we-acacia.",
+      "lesson2": "Njengemizi yomthi we-baobab, ama-neural networks adibanisa kwaye abelana ngolwazi. Sikhula sinamandla kunye.",
+      "lesson3": "Ingonyama izingela ngomonde nangamasu. Kanjalo nathi kufuneka sijongane ne-machine learning ngobulumko nangokunakekela.",
+      "lesson4": "Amanzi ageleza njengedatha kumanethiwekhi yethu. Iqolo ngalinye liba negalelo ekugelezweni kolwazi.",
+      "lesson5": "Indlovu ayilibali, kwaye nama-neural networks yethu ayilibali. Inkumbulo sisiseko sokufunda."
+    },
+    "ubuntu": {
+      "principles": [
+        "Ndiyona kuba siyona",
+        "Sikhula kunye ngolwazi",
+        "Umntu ngamnye ufundisa omnye",
+        "Ubulumko obwabelwane ubulumko obuphindwe",
+        "Umphakathi ngumfundisi"
+      ]
+    }
+  }
+} 

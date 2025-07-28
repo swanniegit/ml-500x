@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Ubuntu', 'Noto Sans', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-night-900 text-white overflow-hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+}
+
+@layer components {
+  .savanna-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  }
+  
+  .biolumen-glow {
+    @apply animate-biolumen-glow;
+    box-shadow: 0 0 20px rgba(34, 139, 34, 0.6);
+  }
+  
+  .neural-pulse {
+    @apply animate-neural-pulse;
+  }
+  
+  .ubuntu-text {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .african-text {
+    font-family: 'Noto Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .backdrop-blur-savanna {
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.7);
+  }
+} 

@@ -1,0 +1,110 @@
+{
+  "language": "en",
+  "name": "English",
+  "direction": "ltr",
+  "translations": {
+    "ui": {
+      "loading": "Loading the Neural Savanna...",
+      "start": "Begin Your Journey",
+      "continue": "Continue Learning",
+      "pause": "Pause",
+      "resume": "Resume",
+      "restart": "Start Over",
+      "settings": "Settings",
+      "help": "Help",
+      "about": "About",
+      "exit": "Exit"
+    },
+    "narration": {
+      "welcome": "Welcome to the Neural Savanna, where we learn AI through the wisdom of Africa.",
+      "lesson1": "In the Ubuntu way, we begin our journey together. Today we learn about neural networks through the wisdom of the acacia tree.",
+      "lesson2": "Like the roots of the baobab tree, neural networks connect and share knowledge. We grow stronger together.",
+      "lesson3": "The lion hunts with patience and strategy. So too must we approach machine learning with wisdom and care.",
+      "lesson4": "Water flows like data through our networks. Each drop contributes to the greater flow of knowledge.",
+      "lesson5": "The elephant never forgets, and neither do our neural networks. Memory is the foundation of learning."
+    },
+    "lessons": {
+      "lesson1": {
+        "title": "The Acacia Tree: Understanding Neural Networks",
+        "description": "Learn how neural networks work through the metaphor of the acacia tree's root system",
+        "objective": "Understand basic neural network structure and function"
+      },
+      "lesson2": {
+        "title": "The Baobab's Roots: Deep Learning Connections",
+        "description": "Explore deep learning through the interconnected root system of the baobab tree",
+        "objective": "Learn about deep neural networks and their connections"
+      },
+      "lesson3": {
+        "title": "The Lion's Hunt: Training Neural Networks",
+        "description": "Discover how neural networks learn through the hunting strategies of the lion",
+        "objective": "Understand neural network training and optimization"
+      },
+      "lesson4": {
+        "title": "The Waterhole: Data Flow in Networks",
+        "description": "Learn about data flow through the metaphor of water in the savanna",
+        "objective": "Master data flow and information processing in neural networks"
+      },
+      "lesson5": {
+        "title": "The Elephant's Memory: Neural Network Memory",
+        "description": "Explore memory in neural networks through the elephant's remarkable memory",
+        "objective": "Understand how neural networks store and retrieve information"
+      }
+    },
+    "biomes": {
+      "savanna": {
+        "name": "The Great Savanna",
+        "description": "Where we begin our journey with basic neural network concepts",
+        "lessons": "Lessons 1-100"
+      },
+      "forest": {
+        "name": "The Sacred Forest",
+        "description": "Deep learning and advanced neural network architectures",
+        "lessons": "Lessons 101-200"
+      },
+      "mountain": {
+        "name": "The Wisdom Mountains",
+        "description": "Complex AI concepts and optimization techniques",
+        "lessons": "Lessons 201-300"
+      },
+      "ocean": {
+        "name": "The Knowledge Ocean",
+        "description": "Deep learning applications and real-world implementations",
+        "lessons": "Lessons 301-400"
+      },
+      "cosmos": {
+        "name": "The Neural Cosmos",
+        "description": "Advanced AI concepts and future of artificial intelligence",
+        "lessons": "Lessons 401-500"
+      }
+    },
+    "ubuntu": {
+      "principles": [
+        "I am because we are",
+        "We grow together in knowledge",
+        "Each one teaches one",
+        "Wisdom shared is wisdom multiplied",
+        "The community is the teacher"
+      ],
+      "values": {
+        "community": "Learning together strengthens us all",
+        "respect": "We honor the wisdom of our ancestors",
+        "sharing": "Knowledge grows when shared",
+        "patience": "True learning takes time and care",
+        "harmony": "We seek balance in all things"
+      }
+    },
+    "feedback": {
+      "success": "Excellent! You've learned well.",
+      "encouragement": "Keep going, you're doing great!",
+      "hint": "Think about how the acacia tree connects its roots...",
+      "retry": "Try again, learning takes patience.",
+      "complete": "Congratulations! You've completed this lesson."
+    },
+    "errors": {
+      "loading": "Error loading lesson. Please try again.",
+      "network": "Connection lost. Working offline.",
+      "audio": "Audio not available. Continuing with text.",
+      "storage": "Unable to save progress. Check storage space."
+    }
+  }
+} 

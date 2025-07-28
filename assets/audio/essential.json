@@ -1,0 +1,67 @@
+{
+  "audio": {
+    "ambient": {
+      "savanna": {
+        "description": "Savanna ambient sounds with wildlife",
+        "file": "savanna-ambient.mp3",
+        "duration": 300,
+        "loop": true
+      },
+      "waterhole": {
+        "description": "Waterhole sounds with birds and water",
+        "file": "waterhole-ambient.mp3", 
+        "duration": 240,
+        "loop": true
+      }
+    },
+    "narration": {
+      "lesson1": {
+        "description": "Lesson 1 introduction narration",
+        "file": "lesson1-intro.mp3",
+        "duration": 45
+      },
+      "lesson2": {
+        "description": "Lesson 2 introduction narration", 
+        "file": "lesson2-intro.mp3",
+        "duration": 52
+      }
+    },
+    "sfx": {
+      "click": {
+        "description": "Interactive click sound",
+        "file": "click.mp3",
+        "duration": 0.3
+      },
+      "success": {
+        "description": "Success completion sound",
+        "file": "success.mp3", 
+        "duration": 1.2
+      },
+      "bio-lumen": {
+        "description": "Bio-lumen collection sound",
+        "file": "biolumen.mp3",
+        "duration": 0.8
+      }
+    }
+  },
+  "localization": {
+    "en": {
+      "narration": {
+        "lesson1": "Welcome to the Neural Savanna, where we learn AI through the wisdom of Africa.",
+        "lesson2": "In the Ubuntu way, we grow together as we explore neural networks."
+      }
+    },
+    "zu": {
+      "narration": {
+        "lesson1": "Siyakwamukela eNeural Savanna, lapho sifunda i-AI ngobuhlakani base-Afrika.",
+        "lesson2": "Ngendlela ye-Ubuntu, sikhula ndawonye njengoba sifunda ama-neural networks."
+      }
+    },
+    "xh": {
+      "narration": {
+        "lesson1": "Siyakwamukela kwiNeural Savanna, apho sifunda i-AI ngobulumko base-Afrika.",
+        "lesson2": "Ngendlela ye-Ubuntu, sikhula kunye njengoko sifunda ama-neural networks."
+      }
+    }
+  }
+} 

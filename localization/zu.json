@@ -1,0 +1,36 @@
+{
+  "language": "zu",
+  "name": "isiZulu",
+  "direction": "ltr",
+  "translations": {
+    "ui": {
+      "loading": "Ilayisha iNeural Savanna...",
+      "start": "Qala Uhambo Lwakho",
+      "continue": "Qhubeka Ukufunda",
+      "pause": "Misa",
+      "resume": "Qhubeka",
+      "restart": "Qala Kabusha",
+      "settings": "Izilungiselelo",
+      "help": "Usizo",
+      "about": "Mayelana",
+      "exit": "Phuma"
+    },
+    "narration": {
+      "welcome": "Siyakwamukela eNeural Savanna, lapho sifunda i-AI ngobuhlakani base-Afrika.",
+      "lesson1": "Ngendlela ye-Ubuntu, siqala uhambo lwethu ndawonye. Namhlanje sifunda ngama-neural networks ngobuhlakani bomuthi we-acacia.",
+      "lesson2": "Njengemizimba yomuthi we-baobab, ama-neural networks axhuma futhi abelane ngolwazi. Sikhula sinamandla ndawonye.",
+      "lesson3": "Ibhubesi lizingela ngobekezeli nangamasu. Kanjalo nathi kufanele sibhekane ne-machine learning ngobuhlakani nangokunakekela.",
+      "lesson4": "Amanzi ageleza njengedatha kumanethiwekhi ethu. Iqolo ngalinye liba negalelo ekugelezweni kolwazi.",
+      "lesson5": "Indlovu ayikhohlwa, futhi nama-neural networks ethu akakhohlwa. Inkumbulo isisekelo sokufunda."
+    },
+    "ubuntu": {
+      "principles": [
+        "Ngiyona ngoba siyona",
+        "Sikhula ndawonye ngolwazi",
+        "Umuntu ngamunye ufundisa omunye",
+        "Ubuhlakani obwabelwane ubuhlakani obuphindwe",
+        "Umphakathi ngumfundisi"
+      ]
+    }
+  }
+} 
