@@ -403,6 +403,546 @@ export const lessons: Lesson[] = [
       practical: 'You\'ll explore different regularization techniques and see how they help neural networks generalize better.',
       ubuntuConnection: 'The leopard teaches us that precision and restraint lead to success - regularization shows us that controlled complexity leads to better generalization.'
     }
+  },
+  {
+    id: 11,
+    title: 'The Eagle\'s Vision: Attention Mechanisms',
+    description: 'Learn about attention through the eagle\'s focused vision',
+    objective: 'Understand attention mechanisms and their applications',
+    biome: biomes[2],
+    difficulty: 4,
+    duration: 500,
+    completed: false,
+    bioLumensReward: 40,
+    content: {
+      introduction: 'The eagle soars high above the landscape, focusing its attention on specific targets while ignoring distractions. Attention mechanisms work similarly, allowing neural networks to focus on relevant parts of the input.',
+      concepts: [
+        {
+          title: 'Selective Attention: The Eagle\'s Focus',
+          explanation: 'The eagle can focus on a single prey animal while ignoring the rest of the landscape. Attention mechanisms allow networks to focus on specific parts of the input.',
+          technical: 'Attention mechanisms compute attention weights that determine how much focus to place on each part of the input sequence.',
+          example: 'Just as the eagle focuses on one target, attention mechanisms focus on the most relevant parts of the input.'
+        },
+        {
+          title: 'Self-Attention: The Eagle\'s Context',
+          explanation: 'The eagle considers the context of its environment when making decisions. Self-attention allows each position to attend to all other positions.',
+          technical: 'Self-attention computes relationships between all positions in a sequence, allowing each position to understand its context.',
+          example: 'Just as the eagle considers the full landscape, self-attention considers the full sequence.'
+        },
+        {
+          title: 'Multi-Head Attention: The Eagle\'s Perspectives',
+          explanation: 'The eagle can view the same scene from different angles and perspectives. Multi-head attention allows multiple attention mechanisms to work in parallel.',
+          technical: 'Multi-head attention runs multiple attention mechanisms simultaneously, each learning different types of relationships.',
+          example: 'Just as the eagle sees from multiple perspectives, multi-head attention captures multiple types of relationships.'
+        }
+      ],
+      practical: 'You\'ll explore how attention mechanisms allow networks to focus on relevant information and understand context.',
+      ubuntuConnection: 'The eagle teaches us that focused attention leads to better understanding - attention mechanisms show us that focused processing leads to better performance.'
+    }
+  },
+  {
+    id: 12,
+    title: 'The Ant Colony: Reinforcement Learning',
+    description: 'Discover reinforcement learning through ant colony behavior',
+    objective: 'Understand reinforcement learning principles and algorithms',
+    biome: biomes[2],
+    difficulty: 4,
+    duration: 550,
+    completed: false,
+    bioLumensReward: 40,
+    content: {
+      introduction: 'Ant colonies learn optimal paths through trial and error, with each ant contributing to the colony\'s collective knowledge. Reinforcement learning works similarly, learning optimal strategies through exploration and exploitation.',
+      concepts: [
+        {
+          title: 'Exploration vs Exploitation: The Ant\'s Dilemma',
+          explanation: 'Ants must balance exploring new paths with using known good paths. Reinforcement learning balances exploration of new actions with exploitation of known good actions.',
+          technical: 'The exploration-exploitation trade-off is fundamental to reinforcement learning, requiring algorithms to balance trying new actions with using known good actions.',
+          example: 'Just as ants explore new paths while using pheromone trails, RL agents explore new actions while using learned policies.'
+        },
+        {
+          title: 'Q-Learning: The Ant\'s Memory',
+          explanation: 'Ants remember which paths lead to food through pheromone trails. Q-learning remembers which actions lead to rewards through Q-values.',
+          technical: 'Q-learning maintains a table of Q-values that represent the expected future reward for each state-action pair.',
+          example: 'Just as pheromone trails guide ants to food, Q-values guide agents to rewards.'
+        },
+        {
+          title: 'Policy Gradient: The Ant\'s Adaptation',
+          explanation: 'Ants adapt their behavior based on success and failure. Policy gradient methods directly optimize the policy based on rewards.',
+          technical: 'Policy gradient methods update the policy parameters in the direction that increases expected reward.',
+          example: 'Just as ants adapt their behavior based on outcomes, policy gradient adapts the policy based on rewards.'
+        }
+      ],
+      practical: 'You\'ll explore how reinforcement learning agents learn optimal strategies through interaction with their environment.',
+      ubuntuConnection: 'Ant colonies demonstrate collective learning - each ant contributes to the colony\'s knowledge. RL shows how individual agents can learn collectively.'
+    }
+  },
+  {
+    id: 13,
+    title: 'The Chameleon\'s Adaptation: Transfer Learning',
+    description: 'Learn about transfer learning through the chameleon\'s adaptation',
+    objective: 'Understand transfer learning and domain adaptation',
+    biome: biomes[2],
+    difficulty: 5,
+    duration: 600,
+    completed: false,
+    bioLumensReward: 45,
+    content: {
+      introduction: 'The chameleon adapts its appearance to blend into different environments. Transfer learning allows neural networks to adapt knowledge learned in one domain to another.',
+      concepts: [
+        {
+          title: 'Feature Transfer: The Chameleon\'s Skills',
+          explanation: 'The chameleon\'s ability to change color works in many environments. Transfer learning transfers learned features to new domains.',
+          technical: 'Transfer learning reuses features learned on a source task to improve performance on a target task.',
+          example: 'Just as the chameleon\'s color-changing works in many environments, learned features work in many domains.'
+        },
+        {
+          title: 'Fine-tuning: The Chameleon\'s Adjustment',
+          explanation: 'The chameleon makes small adjustments to match specific environments. Fine-tuning makes small adjustments to pre-trained models.',
+          technical: 'Fine-tuning updates a pre-trained model on a new task with a small learning rate to preserve learned features.',
+          example: 'Just as the chameleon adjusts to specific environments, fine-tuning adjusts to specific tasks.'
+        },
+        {
+          title: 'Domain Adaptation: The Chameleon\'s Environment',
+          explanation: 'The chameleon adapts to different environments while maintaining its core abilities. Domain adaptation adapts models to new domains.',
+          technical: 'Domain adaptation techniques help models generalize from a source domain to a target domain with different distributions.',
+          example: 'Just as the chameleon adapts to new environments, domain adaptation adapts to new domains.'
+        }
+      ],
+      practical: 'You\'ll explore how transfer learning allows models to leverage knowledge from one domain to improve performance in another.',
+      ubuntuConnection: 'The chameleon teaches us that adaptation is key to survival - transfer learning shows us that adaptation is key to generalization.'
+    }
+  },
+  {
+    id: 14,
+    title: 'The Giraffe\'s Perspective: Multi-Task Learning',
+    description: 'Explore multi-task learning through the giraffe\'s unique perspective',
+    objective: 'Understand multi-task learning and shared representations',
+    biome: biomes[2],
+    difficulty: 5,
+    duration: 650,
+    completed: false,
+    bioLumensReward: 45,
+    content: {
+      introduction: 'The giraffe\'s height gives it a unique perspective on the savanna, allowing it to see multiple things at once. Multi-task learning allows neural networks to learn multiple tasks simultaneously.',
+      concepts: [
+        {
+          title: 'Shared Representations: The Giraffe\'s View',
+          explanation: 'The giraffe\'s height allows it to see multiple aspects of the landscape simultaneously. Multi-task learning shares representations across multiple tasks.',
+          technical: 'Multi-task learning trains a single model on multiple related tasks, sharing representations to improve performance on all tasks.',
+          example: 'Just as the giraffe sees multiple aspects at once, multi-task learning learns multiple tasks at once.'
+        },
+        {
+          title: 'Task Balancing: The Giraffe\'s Focus',
+          explanation: 'The giraffe must balance attention between different aspects of its environment. Multi-task learning must balance learning across different tasks.',
+          technical: 'Task balancing ensures that all tasks receive appropriate attention during training, preventing some tasks from dominating.',
+          example: 'Just as the giraffe balances attention, multi-task learning balances task learning.'
+        },
+        {
+          title: 'Transfer Between Tasks: The Giraffe\'s Knowledge',
+          explanation: 'The giraffe\'s knowledge of one aspect of the environment helps it understand others. Multi-task learning transfers knowledge between tasks.',
+          technical: 'Knowledge learned on one task can improve performance on related tasks through shared representations.',
+          example: 'Just as the giraffe\'s knowledge transfers across aspects, task knowledge transfers across tasks.'
+        }
+      ],
+      practical: 'You\'ll explore how multi-task learning allows models to learn multiple related tasks simultaneously.',
+      ubuntuConnection: 'The giraffe teaches us that a broader perspective leads to better understanding - multi-task learning shows us that shared knowledge leads to better performance.'
+    }
+  },
+  {
+    id: 15,
+    title: 'The Rhino\'s Strength: Model Compression',
+    description: 'Learn about model compression through the rhino\'s strength and efficiency',
+    objective: 'Understand model compression and efficient neural networks',
+    biome: biomes[2],
+    difficulty: 5,
+    duration: 700,
+    completed: false,
+    bioLumensReward: 50,
+    content: {
+      introduction: 'The rhino is powerful yet efficient, using its strength wisely. Model compression makes neural networks more efficient while maintaining performance.',
+      concepts: [
+        {
+          title: 'Pruning: The Rhino\'s Efficiency',
+          explanation: 'The rhino uses only the energy it needs, avoiding waste. Pruning removes unnecessary connections from neural networks.',
+          technical: 'Pruning removes weights that contribute little to the model\'s performance, reducing model size and computational cost.',
+          example: 'Just as the rhino conserves energy, pruning conserves computational resources.'
+        },
+        {
+          title: 'Quantization: The Rhino\'s Precision',
+          explanation: 'The rhino uses precise movements despite its size. Quantization reduces precision while maintaining performance.',
+          technical: 'Quantization reduces the number of bits used to represent weights and activations, reducing memory and computational requirements.',
+          example: 'Just as the rhino is precise despite its size, quantized models are efficient despite reduced precision.'
+        },
+        {
+          title: 'Knowledge Distillation: The Rhino\'s Teaching',
+          explanation: 'The rhino teaches its young efficient survival strategies. Knowledge distillation transfers knowledge from large models to smaller ones.',
+          technical: 'Knowledge distillation trains a smaller student model to mimic the behavior of a larger teacher model.',
+          example: 'Just as the rhino teaches its young, the teacher model teaches the student model.'
+        }
+      ],
+      practical: 'You\'ll explore how model compression techniques make neural networks more efficient while maintaining performance.',
+      ubuntuConnection: 'The rhino teaches us that strength and efficiency can coexist - model compression shows us that performance and efficiency can coexist.'
+    }
+  },
+  {
+    id: 16,
+    title: 'The Dolphin\'s Communication: Natural Language Processing',
+    description: 'Discover NLP through the dolphin\'s sophisticated communication',
+    objective: 'Understand natural language processing and language models',
+    biome: biomes[3],
+    difficulty: 5,
+    duration: 600,
+    completed: false,
+    bioLumensReward: 50,
+    content: {
+      introduction: 'Dolphins communicate using complex vocalizations and body language, understanding context and meaning. Natural Language Processing (NLP) helps computers understand human language.',
+      concepts: [
+        {
+          title: 'Word Embeddings: The Dolphin\'s Vocabulary',
+          explanation: 'Dolphins have a rich vocabulary of sounds and gestures. Word embeddings represent words as vectors in a continuous space.',
+          technical: 'Word embeddings map words to dense vectors that capture semantic relationships and meaning.',
+          example: 'Just as dolphin sounds have meaning, word embeddings capture word meaning.'
+        },
+        {
+          title: 'Sequence Models: The Dolphin\'s Conversation',
+          explanation: 'Dolphins understand the flow of conversation and context. Sequence models understand the order and context of words.',
+          technical: 'Sequence models like RNNs and Transformers process text in order, maintaining context and understanding relationships.',
+          example: 'Just as dolphins understand conversation flow, sequence models understand text flow.'
+        },
+        {
+          title: 'Attention in Language: The Dolphin\'s Focus',
+          explanation: 'Dolphins focus on relevant parts of communication. Attention mechanisms help models focus on relevant parts of text.',
+          technical: 'Attention mechanisms allow models to focus on specific words or phrases when processing language.',
+          example: 'Just as dolphins focus on important sounds, attention focuses on important words.'
+        }
+      ],
+      practical: 'You\'ll explore how NLP models understand and generate human language.',
+      ubuntuConnection: 'Dolphins communicate for the good of the pod - NLP helps computers communicate for the good of humans.'
+    }
+  },
+  {
+    id: 17,
+    title: 'The Whale\'s Song: Speech Recognition',
+    description: 'Learn about speech recognition through the whale\'s complex vocalizations',
+    objective: 'Understand speech recognition and audio processing',
+    biome: biomes[3],
+    difficulty: 5,
+    duration: 650,
+    completed: false,
+    bioLumensReward: 55,
+    content: {
+      introduction: 'Whales communicate through complex songs that travel vast distances underwater. Speech recognition systems convert human speech into text.',
+      concepts: [
+        {
+          title: 'Audio Features: The Whale\'s Sound',
+          explanation: 'Whales produce complex sounds with specific frequencies and patterns. Audio features extract meaningful information from sound waves.',
+          technical: 'Audio features like MFCCs and spectrograms represent audio signals in ways that highlight important characteristics.',
+          example: 'Just as whale sounds have specific characteristics, audio features capture sound characteristics.'
+        },
+        {
+          title: 'Acoustic Models: The Whale\'s Hearing',
+          explanation: 'Whales can distinguish between different sounds and patterns. Acoustic models learn to recognize speech sounds.',
+          technical: 'Acoustic models learn the relationship between audio features and phonemes or words.',
+          example: 'Just as whales recognize different sounds, acoustic models recognize different speech sounds.'
+        },
+        {
+          title: 'Language Models: The Whale\'s Grammar',
+          explanation: 'Whales follow patterns in their communication. Language models understand grammar and word relationships.',
+          technical: 'Language models predict the probability of word sequences, helping speech recognition systems choose the most likely interpretation.',
+          example: 'Just as whales follow communication patterns, language models follow language patterns.'
+        }
+      ],
+      practical: 'You\'ll explore how speech recognition systems convert spoken words into text.',
+      ubuntuConnection: 'Whales communicate across vast distances - speech recognition helps humans communicate across barriers.'
+    }
+  },
+  {
+    id: 18,
+    title: 'The Octopus\'s Intelligence: Computer Vision',
+    description: 'Explore computer vision through the octopus\'s visual intelligence',
+    objective: 'Understand computer vision and image understanding',
+    biome: biomes[3],
+    difficulty: 5,
+    duration: 700,
+    completed: false,
+    bioLumensReward: 55,
+    content: {
+      introduction: 'The octopus has remarkable visual intelligence, able to recognize objects, patterns, and even solve visual puzzles. Computer vision gives machines the ability to understand images.',
+      concepts: [
+        {
+          title: 'Image Understanding: The Octopus\'s Vision',
+          explanation: 'The octopus can recognize objects, textures, and patterns in its environment. Computer vision systems learn to understand visual content.',
+          technical: 'Computer vision uses deep learning to extract features from images and understand their content.',
+          example: 'Just as the octopus understands what it sees, computer vision understands image content.'
+        },
+        {
+          title: 'Object Detection: The Octopus\'s Recognition',
+          explanation: 'The octopus can identify and locate objects in its environment. Object detection finds and localizes objects in images.',
+          technical: 'Object detection identifies objects in images and determines their locations using bounding boxes.',
+          example: 'Just as the octopus recognizes objects, object detection recognizes objects in images.'
+        },
+        {
+          title: 'Image Segmentation: The Octopus\'s Detail',
+          explanation: 'The octopus can distinguish fine details and boundaries. Image segmentation divides images into meaningful regions.',
+          technical: 'Image segmentation assigns each pixel to a class, creating detailed maps of image content.',
+          example: 'Just as the octopus sees fine details, segmentation sees pixel-level details.'
+        }
+      ],
+      practical: 'You\'ll explore how computer vision systems understand and analyze images.',
+      ubuntuConnection: 'The octopus sees the world in detail - computer vision helps machines see the world clearly.'
+    }
+  },
+  {
+    id: 19,
+    title: 'The Sea Turtle\'s Navigation: Robotics and Control',
+    description: 'Learn about robotics through the sea turtle\'s navigation abilities',
+    objective: 'Understand robotics, control systems, and autonomous navigation',
+    biome: biomes[3],
+    difficulty: 6,
+    duration: 750,
+    completed: false,
+    bioLumensReward: 60,
+    content: {
+      introduction: 'Sea turtles navigate vast ocean distances using internal compasses and environmental cues. Robotics systems enable machines to navigate and interact with the physical world.',
+      concepts: [
+        {
+          title: 'Sensors and Perception: The Turtle\'s Senses',
+          explanation: 'The turtle uses multiple senses to understand its environment. Robots use sensors to perceive their surroundings.',
+          technical: 'Robots use cameras, lidar, and other sensors to build representations of their environment.',
+          example: 'Just as the turtle senses its environment, robots sense their environment.'
+        },
+        {
+          title: 'Path Planning: The Turtle\'s Route',
+          explanation: 'The turtle plans efficient routes across the ocean. Path planning algorithms find optimal routes for robots.',
+          technical: 'Path planning algorithms find collision-free paths from start to goal positions.',
+          example: 'Just as the turtle plans its route, robots plan their paths.'
+        },
+        {
+          title: 'Control Systems: The Turtle\'s Movement',
+          explanation: 'The turtle controls its movement precisely despite ocean currents. Control systems enable robots to execute planned actions.',
+          technical: 'Control systems translate high-level commands into low-level motor commands.',
+          example: 'Just as the turtle controls its movement, robots control their movements.'
+        }
+      ],
+      practical: 'You\'ll explore how robots perceive, plan, and act in the physical world.',
+      ubuntuConnection: 'The turtle navigates for the good of its species - robots navigate for the good of humanity.'
+    }
+  },
+  {
+    id: 20,
+    title: 'The Coral Reef: Generative AI',
+    description: 'Discover generative AI through the coral reef\'s creative ecosystem',
+    objective: 'Understand generative models and creative AI',
+    biome: biomes[3],
+    difficulty: 6,
+    duration: 800,
+    completed: false,
+    bioLumensReward: 60,
+    content: {
+      introduction: 'Coral reefs are incredibly diverse and creative ecosystems, constantly generating new forms of life. Generative AI creates new content, from images to music to text.',
+      concepts: [
+        {
+          title: 'Generative Models: The Reef\'s Creation',
+          explanation: 'The coral reef creates new forms of life through natural processes. Generative models create new content through learned patterns.',
+          technical: 'Generative models learn the distribution of training data and can generate new samples from that distribution.',
+          example: 'Just as the reef creates new life, generative models create new content.'
+        },
+        {
+          title: 'GANs: The Reef\'s Competition',
+          explanation: 'Different species in the reef compete and cooperate, driving evolution. GANs use competition between networks to improve generation.',
+          technical: 'Generative Adversarial Networks use a generator and discriminator that compete to create realistic content.',
+          example: 'Just as reef species compete and evolve, GANs compete and improve.'
+        },
+        {
+          title: 'Creative Applications: The Reef\'s Diversity',
+          explanation: 'The reef supports incredible diversity of life forms. Generative AI supports diverse creative applications.',
+          technical: 'Generative AI can create art, music, text, and other creative content across many domains.',
+          example: 'Just as the reef supports diverse life, generative AI supports diverse creativity.'
+        }
+      ],
+      practical: 'You\'ll explore how generative AI creates new and creative content.',
+      ubuntuConnection: 'The coral reef creates life for the good of the ocean - generative AI creates content for the good of humanity.'
+    }
+  },
+  {
+    id: 21,
+    title: 'The Constellation: Large Language Models',
+    description: 'Explore LLMs through the patterns of the stars',
+    objective: 'Understand large language models and their capabilities',
+    biome: biomes[4],
+    difficulty: 6,
+    duration: 700,
+    completed: false,
+    bioLumensReward: 65,
+    content: {
+      introduction: 'Constellations connect stars into meaningful patterns that tell stories across cultures. Large Language Models (LLMs) connect words into meaningful patterns that understand and generate human language.',
+      concepts: [
+        {
+          title: 'Scale and Emergence: The Constellation\'s Pattern',
+          explanation: 'Individual stars form patterns when viewed together. LLMs show emergent abilities when scaled to billions of parameters.',
+          technical: 'LLMs demonstrate emergent abilities like reasoning and few-shot learning that aren\'t present in smaller models.',
+          example: 'Just as stars form patterns together, parameters form intelligence together.'
+        },
+        {
+          title: 'Context Understanding: The Constellation\'s Story',
+          explanation: 'Constellations tell stories that depend on cultural context. LLMs understand context and meaning in language.',
+          technical: 'LLMs use attention mechanisms to understand relationships between words and maintain context across long sequences.',
+          example: 'Just as constellations tell stories, LLMs understand language stories.'
+        },
+        {
+          title: 'Few-Shot Learning: The Constellation\'s Adaptation',
+          explanation: 'Different cultures see different patterns in the same stars. LLMs can adapt to new tasks with few examples.',
+          technical: 'Few-shot learning allows models to perform new tasks with minimal training examples.',
+          example: 'Just as constellations adapt to cultures, LLMs adapt to tasks.'
+        }
+      ],
+      practical: 'You\'ll explore how large language models understand and generate human language.',
+      ubuntuConnection: 'Constellations connect stars across the universe - LLMs connect knowledge across humanity.'
+    }
+  },
+  {
+    id: 22,
+    title: 'The Galaxy: Multimodal AI',
+    description: 'Learn about multimodal AI through the galaxy\'s diverse elements',
+    objective: 'Understand multimodal learning and cross-modal understanding',
+    biome: biomes[4],
+    difficulty: 6,
+    duration: 750,
+    completed: false,
+    bioLumensReward: 65,
+    content: {
+      introduction: 'Galaxies contain diverse elements - stars, planets, gas, and dust - that interact in complex ways. Multimodal AI combines different types of data - text, images, audio - to create richer understanding.',
+      concepts: [
+        {
+          title: 'Cross-Modal Learning: The Galaxy\'s Harmony',
+          explanation: 'Different elements in the galaxy interact and influence each other. Multimodal AI learns relationships between different types of data.',
+          technical: 'Multimodal models learn to align and relate information from different modalities like text and images.',
+          example: 'Just as galaxy elements interact, multimodal data interacts.'
+        },
+        {
+          title: 'Fusion Strategies: The Galaxy\'s Integration',
+          explanation: 'The galaxy integrates diverse elements into a coherent system. Multimodal AI integrates diverse data types into coherent understanding.',
+          technical: 'Fusion strategies combine information from different modalities at different stages of processing.',
+          example: 'Just as the galaxy integrates elements, multimodal AI integrates data types.'
+        },
+        {
+          title: 'Zero-Shot Learning: The Galaxy\'s Discovery',
+          explanation: 'The galaxy reveals new phenomena that weren\'t expected. Multimodal AI can perform tasks it wasn\'t explicitly trained for.',
+          technical: 'Zero-shot learning allows models to perform new tasks without specific training examples.',
+          example: 'Just as the galaxy reveals surprises, multimodal AI reveals new capabilities.'
+        }
+      ],
+      practical: 'You\'ll explore how multimodal AI combines different types of data for richer understanding.',
+      ubuntuConnection: 'The galaxy unites diverse elements - multimodal AI unites diverse knowledge.'
+    }
+  },
+  {
+    id: 23,
+    title: 'The Black Hole: AI Ethics and Safety',
+    description: 'Explore AI ethics through the metaphor of the black hole',
+    objective: 'Understand AI safety, ethics, and responsible development',
+    biome: biomes[4],
+    difficulty: 7,
+    duration: 800,
+    completed: false,
+    bioLumensReward: 70,
+    content: {
+      introduction: 'Black holes are powerful forces that must be understood and respected. AI systems are powerful tools that must be developed and used responsibly.',
+      concepts: [
+        {
+          title: 'Alignment: The Black Hole\'s Gravity',
+          explanation: 'The black hole\'s gravity affects everything around it. AI alignment ensures AI systems pursue goals aligned with human values.',
+          technical: 'AI alignment research aims to ensure AI systems act in accordance with human intentions and values.',
+          example: 'Just as black hole gravity affects nearby objects, AI alignment affects human society.'
+        },
+        {
+          title: 'Bias and Fairness: The Black Hole\'s Neutrality',
+          explanation: 'The black hole treats all matter equally, but its effects can be different. AI systems must be fair and unbiased.',
+          technical: 'AI fairness research aims to ensure AI systems don\'t discriminate based on protected attributes.',
+          example: 'Just as the black hole is neutral, AI should be fair.'
+        },
+        {
+          title: 'Transparency: The Black Hole\'s Mystery',
+          explanation: 'Black holes are mysterious but their effects are observable. AI systems should be transparent and interpretable.',
+          technical: 'Explainable AI research aims to make AI systems understandable and interpretable.',
+          example: 'Just as black hole effects are observable, AI decisions should be explainable.'
+        }
+      ],
+      practical: 'You\'ll explore the ethical considerations and safety measures needed for responsible AI development.',
+      ubuntuConnection: 'The black hole teaches us to respect powerful forces - AI ethics teaches us to respect powerful technology.'
+    }
+  },
+  {
+    id: 24,
+    title: 'The Supernova: AI for Good',
+    description: 'Discover AI applications for social good through the supernova',
+    objective: 'Understand AI applications that benefit humanity and society',
+    biome: biomes[4],
+    difficulty: 7,
+    duration: 850,
+    completed: false,
+    bioLumensReward: 70,
+    content: {
+      introduction: 'Supernovas create elements that form new stars and planets, enriching the universe. AI for Good creates solutions that enrich human society and solve important problems.',
+      concepts: [
+        {
+          title: 'Healthcare AI: The Supernova\'s Healing',
+          explanation: 'Supernovas create elements essential for life. Healthcare AI creates tools essential for human health.',
+          technical: 'AI in healthcare includes diagnosis, drug discovery, personalized medicine, and medical image analysis.',
+          example: 'Just as supernovas create life-giving elements, healthcare AI creates life-saving tools.'
+        },
+        {
+          title: 'Climate AI: The Supernova\'s Energy',
+          explanation: 'Supernovas release enormous energy that shapes galaxies. Climate AI helps understand and address climate change.',
+          technical: 'AI for climate includes weather prediction, carbon monitoring, renewable energy optimization, and climate modeling.',
+          example: 'Just as supernovas shape galaxies, climate AI shapes our planet\'s future.'
+        },
+        {
+          title: 'Education AI: The Supernova\'s Knowledge',
+          explanation: 'Supernovas create knowledge about the universe. Education AI creates knowledge for human learning.',
+          technical: 'AI in education includes personalized learning, automated tutoring, and educational content generation.',
+          example: 'Just as supernovas create cosmic knowledge, education AI creates human knowledge.'
+        }
+      ],
+      practical: 'You\'ll explore how AI can be used to solve important social and environmental problems.',
+      ubuntuConnection: 'The supernova enriches the universe - AI for Good enriches humanity.'
+    }
+  },
+  {
+    id: 25,
+    title: 'The Universe: The Future of AI',
+    description: 'Explore the future of AI through the vastness of the universe',
+    objective: 'Understand emerging AI trends and future possibilities',
+    biome: biomes[4],
+    difficulty: 7,
+    duration: 900,
+    completed: false,
+    bioLumensReward: 75,
+    content: {
+      introduction: 'The universe is vast and full of possibilities, constantly expanding and evolving. The future of AI is similarly vast, with endless possibilities for advancement and discovery.',
+      concepts: [
+        {
+          title: 'Artificial General Intelligence: The Universe\'s Intelligence',
+          explanation: 'The universe contains intelligence in many forms. AGI aims to create intelligence as general as human intelligence.',
+          technical: 'AGI research aims to create AI systems that can perform any intellectual task that humans can perform.',
+          example: 'Just as the universe contains diverse intelligence, AGI would be diverse and general.'
+        },
+        {
+          title: 'Consciousness and AI: The Universe\'s Awareness',
+          explanation: 'The universe contains conscious beings. AI consciousness research explores whether machines can be conscious.',
+          technical: 'AI consciousness research examines whether AI systems could develop subjective experience and awareness.',
+          example: 'Just as the universe contains consciousness, AI might one day contain consciousness.'
+        },
+        {
+          title: 'Human-AI Collaboration: The Universe\'s Harmony',
+          explanation: 'The universe thrives through the harmony of its many elements. Human-AI collaboration creates harmony between human and artificial intelligence.',
+          technical: 'Human-AI collaboration research explores how humans and AI can work together to solve complex problems.',
+          example: 'Just as the universe thrives through harmony, humanity thrives through human-AI collaboration.'
+        }
+      ],
+      practical: 'You\'ll explore the exciting possibilities and challenges of AI\'s future.',
+      ubuntuConnection: 'The universe teaches us that we are all connected - the future of AI teaches us that human and artificial intelligence can be connected for the good of all.'
+    }
   }
 ];
 
