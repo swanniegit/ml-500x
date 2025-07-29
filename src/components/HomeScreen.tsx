@@ -143,7 +143,7 @@ const HomeScreen: React.FC = () => {
       </div>
 
       {/* Debug Section - Only show in development */}
-      {process.env.NODE_ENV === 'development' && (
+      {import.meta.env.DEV && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
