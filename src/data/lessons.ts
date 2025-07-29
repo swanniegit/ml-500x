@@ -6,7 +6,7 @@ export const biomes: Biome[] = [
     name: 'The Great Savanna',
     description: 'Where we begin our journey with basic neural network concepts',
     color: '#22c55e',
-    lessons: [1, 2, 3, 4, 5],
+    lessons: Array.from({length: 100}, (_, i) => i + 1), // Lessons 1-100
     unlocked: true
   },
   {
@@ -14,7 +14,7 @@ export const biomes: Biome[] = [
     name: 'The Sacred Forest',
     description: 'Deep learning and advanced neural network architectures',
     color: '#16a34a',
-    lessons: [6, 7, 8, 9, 10],
+    lessons: Array.from({length: 100}, (_, i) => i + 101), // Lessons 101-200
     unlocked: true
   },
   {
@@ -22,7 +22,7 @@ export const biomes: Biome[] = [
     name: 'The Wisdom Mountains',
     description: 'Complex AI concepts and optimization techniques',
     color: '#0ea5e9',
-    lessons: [11, 12, 13, 14, 15],
+    lessons: Array.from({length: 100}, (_, i) => i + 201), // Lessons 201-300
     unlocked: false
   },
   {
@@ -30,7 +30,7 @@ export const biomes: Biome[] = [
     name: 'The Knowledge Ocean',
     description: 'Deep learning applications and real-world implementations',
     color: '#0284c7',
-    lessons: [16, 17, 18, 19, 20],
+    lessons: Array.from({length: 100}, (_, i) => i + 301), // Lessons 301-400
     unlocked: false
   },
   {
@@ -38,7 +38,7 @@ export const biomes: Biome[] = [
     name: 'The Neural Cosmos',
     description: 'Advanced AI concepts and future of artificial intelligence',
     color: '#7c3aed',
-    lessons: [21, 22, 23, 24, 25],
+    lessons: Array.from({length: 100}, (_, i) => i + 401), // Lessons 401-500
     unlocked: false
   }
 ];
@@ -942,6 +942,906 @@ export const lessons: Lesson[] = [
       ],
       practical: 'You\'ll explore the exciting possibilities and challenges of AI\'s future.',
       ubuntuConnection: 'The universe teaches us that we are all connected - the future of AI teaches us that human and artificial intelligence can be connected for the good of all.'
+    }
+  },
+  {
+    id: 26,
+    title: 'The Lion\'s Pride: Social Learning Networks',
+    description: 'Learn about collaborative learning through lion pride dynamics',
+    objective: 'Understand how AI systems can learn from each other',
+    biome: biomes[0],
+    difficulty: 2,
+    duration: 400,
+    completed: false,
+    bioLumensReward: 15,
+    content: {
+      introduction: 'Lion prides demonstrate remarkable social learning - cubs learn hunting techniques from their mothers, and the entire pride benefits from shared knowledge. Similarly, AI systems can learn from each other through collaborative training and knowledge sharing.',
+      concepts: [
+        {
+          title: 'Knowledge Sharing: The Pride\'s Wisdom',
+          explanation: 'Lion cubs learn essential survival skills by observing and practicing with their pride members. Each lion contributes to the collective knowledge of the group.',
+          technical: 'Social learning in AI involves systems that can learn from each other\'s experiences, share knowledge, and improve collectively.',
+          example: 'Just as lion cubs learn hunting techniques from their pride, AI systems can learn from each other\'s training data and experiences.'
+        },
+        {
+          title: 'Collective Intelligence: The Pride\'s Strength',
+          explanation: 'A lion pride is stronger than individual lions because they work together, share resources, and protect each other.',
+          technical: 'Collective intelligence in AI refers to systems that combine multiple AI models to achieve better performance than any single model.',
+          example: 'Just as a pride of lions is more effective than individual lions, an ensemble of AI models can make better predictions than any single model.'
+        },
+        {
+          title: 'Adaptive Learning: The Pride\'s Evolution',
+          explanation: 'Lion prides adapt their hunting strategies based on changing conditions and new challenges.',
+          technical: 'Adaptive learning allows AI systems to continuously improve and adjust their strategies based on new information.',
+          example: 'Just as lions adapt their hunting techniques to different prey, AI systems adapt their strategies to new types of data.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can learn collaboratively, just like lion prides share knowledge and adapt together.',
+      ubuntuConnection: 'The lion pride teaches us that collective wisdom is stronger than individual knowledge - collaborative AI learning embodies the Ubuntu principle of shared intelligence.'
+    }
+  },
+  {
+    id: 27,
+    title: 'The Zebra\'s Stripes: Pattern Recognition',
+    description: 'Discover pattern recognition through the zebra\'s unique markings',
+    objective: 'Learn how AI identifies and classifies patterns',
+    biome: biomes[0],
+    difficulty: 2,
+    duration: 450,
+    completed: false,
+    bioLumensReward: 20,
+    content: {
+      introduction: 'Each zebra has a unique pattern of stripes, just as every zebra can recognize other zebras by their distinctive markings. Pattern recognition is fundamental to AI - it\'s how systems identify objects, classify data, and make sense of complex information.',
+      concepts: [
+        {
+          title: 'Feature Detection: The Zebra\'s Stripes',
+          explanation: 'Zebras can distinguish between different stripe patterns, recognizing individuals and family members.',
+          technical: 'Feature detection in AI involves identifying important characteristics in data that help distinguish between different classes or categories.',
+          example: 'Just as zebras recognize stripe patterns, AI systems can detect features like edges, textures, and shapes in images.'
+        },
+        {
+          title: 'Classification: The Zebra\'s Recognition',
+          explanation: 'Zebras can classify other animals as friend, foe, or family based on their patterns and behaviors.',
+          technical: 'Classification in AI involves categorizing data into predefined groups based on learned patterns.',
+          example: 'Just as zebras classify other animals, AI systems can classify emails as spam or legitimate, or images as cats or dogs.'
+        },
+        {
+          title: 'Pattern Matching: The Zebra\'s Memory',
+          explanation: 'Zebras remember patterns they\'ve seen before and can recognize them even when partially obscured.',
+          technical: 'Pattern matching allows AI systems to identify familiar patterns even when they\'re incomplete or noisy.',
+          example: 'Just as zebras recognize familiar stripe patterns, AI can recognize faces even when partially covered or from different angles.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems recognize and classify patterns, just like zebras distinguish between different stripe patterns.',
+      ubuntuConnection: 'The zebra\'s stripes teach us that unique patterns connect us to our community - pattern recognition in AI helps connect data to meaningful insights.'
+    }
+  },
+  {
+    id: 28,
+    title: 'The Giraffe\'s Height: Hierarchical Learning',
+    description: 'Learn about hierarchical learning through the giraffe\'s perspective',
+    objective: 'Understand how AI builds complex understanding from simple features',
+    biome: biomes[0],
+    difficulty: 3,
+    duration: 500,
+    completed: false,
+    bioLumensReward: 20,
+    content: {
+      introduction: 'The giraffe\'s height gives it a unique perspective on the savanna - it can see both the ground level and the treetops simultaneously. Hierarchical learning in AI works similarly, building complex understanding from simple features in multiple layers.',
+      concepts: [
+        {
+          title: 'Multi-Level Perception: The Giraffe\'s View',
+          explanation: 'The giraffe can see both the grass at its feet and the leaves at the top of trees, processing information at multiple levels.',
+          technical: 'Hierarchical learning processes information at multiple levels, from simple features to complex concepts.',
+          example: 'Just as the giraffe sees both ground and treetop levels, AI systems process images from simple edges to complex objects.'
+        },
+        {
+          title: 'Feature Hierarchy: The Giraffe\'s Understanding',
+          explanation: 'The giraffe builds understanding from simple observations (grass, trees) to complex concepts (food availability, predator presence).',
+          technical: 'AI systems build complex understanding by combining simple features into increasingly sophisticated representations.',
+          example: 'Just as the giraffe combines simple observations into complex understanding, AI combines pixels into edges, edges into shapes, and shapes into objects.'
+        },
+        {
+          title: 'Context Awareness: The Giraffe\'s Wisdom',
+          explanation: 'The giraffe\'s height allows it to understand the broader context of the savanna ecosystem.',
+          technical: 'Hierarchical learning allows AI to understand context and relationships between different levels of information.',
+          example: 'Just as the giraffe understands the broader savanna context, AI systems can understand the context of words in sentences or objects in scenes.'
+        }
+      ],
+      practical: 'You\'ll explore how AI builds complex understanding through hierarchical processing, just like the giraffe\'s multi-level perspective.',
+      ubuntuConnection: 'The giraffe\'s height teaches us that perspective comes from seeing multiple levels - hierarchical AI learning embodies the Ubuntu principle of understanding through multiple viewpoints.'
+    }
+  },
+  {
+    id: 29,
+    title: 'The Elephant\'s Memory: Long-term Learning',
+    description: 'Explore long-term learning through the elephant\'s remarkable memory',
+    objective: 'Understand how AI systems retain and use long-term knowledge',
+    biome: biomes[0],
+    difficulty: 3,
+    duration: 550,
+    completed: false,
+    bioLumensReward: 25,
+    content: {
+      introduction: 'Elephants have extraordinary memories - they remember water sources, family members, and migration routes for decades. Long-term learning in AI involves systems that can retain knowledge over extended periods and use it to improve future performance.',
+      concepts: [
+        {
+          title: 'Memory Storage: The Elephant\'s Knowledge',
+          explanation: 'Elephants store vast amounts of information about their environment, family, and experiences.',
+          technical: 'Long-term learning in AI involves storing learned knowledge in ways that can be accessed and used over extended periods.',
+          example: 'Just as elephants remember water sources, AI systems can remember patterns and relationships they\'ve learned.'
+        },
+        {
+          title: 'Experience Integration: The Elephant\'s Wisdom',
+          explanation: 'Elephants integrate new experiences with existing knowledge, building wisdom over time.',
+          technical: 'AI systems can integrate new learning with existing knowledge, improving their understanding over time.',
+          example: 'Just as elephants learn from each experience, AI systems can improve their performance based on new data.'
+        },
+        {
+          title: 'Knowledge Transfer: The Elephant\'s Teaching',
+          explanation: 'Elephants pass knowledge to younger generations, ensuring survival strategies are preserved.',
+          technical: 'Knowledge transfer in AI involves sharing learned knowledge between different systems or models.',
+          example: 'Just as elephants teach their young, AI systems can transfer knowledge to new models or applications.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can retain and use knowledge over time, just like elephants remember and apply their experiences.',
+      ubuntuConnection: 'The elephant\'s memory teaches us that wisdom comes from preserving and sharing knowledge - long-term AI learning embodies the Ubuntu principle of collective wisdom.'
+    }
+  },
+  {
+    id: 30,
+    title: 'The Hyena\'s Strategy: Adaptive Decision Making',
+    description: 'Learn about adaptive decision making through hyena hunting strategies',
+    objective: 'Understand how AI systems adapt their strategies based on changing conditions',
+    biome: biomes[0],
+    difficulty: 3,
+    duration: 600,
+    completed: false,
+    bioLumensReward: 25,
+    content: {
+      introduction: 'Hyenas are masterful adaptive strategists - they adjust their hunting tactics based on prey, terrain, weather, and competition. Adaptive decision making in AI involves systems that can change their strategies based on new information and changing conditions.',
+      concepts: [
+        {
+          title: 'Dynamic Strategy: The Hyena\'s Flexibility',
+          explanation: 'Hyenas adapt their hunting strategies based on the type of prey, available resources, and environmental conditions.',
+          technical: 'Adaptive decision making allows AI systems to adjust their strategies based on changing conditions and new information.',
+          example: 'Just as hyenas adapt their hunting strategies, AI systems can adjust their algorithms based on new data or changing requirements.'
+        },
+        {
+          title: 'Risk Assessment: The Hyena\'s Calculation',
+          explanation: 'Hyenas carefully assess risks and rewards before committing to a hunting strategy.',
+          technical: 'AI systems can assess risks and make decisions that balance multiple factors and potential outcomes.',
+          example: 'Just as hyenas assess hunting risks, AI systems can evaluate the risks and benefits of different decisions.'
+        },
+        {
+          title: 'Learning from Failure: The Hyena\'s Resilience',
+          explanation: 'When a hunt fails, hyenas learn from the experience and adjust their approach for next time.',
+          technical: 'AI systems can learn from mistakes and failures, using that knowledge to improve future performance.',
+          example: 'Just as hyenas learn from failed hunts, AI systems can learn from incorrect predictions and improve their accuracy.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can adapt their decision-making strategies, just like hyenas adjust their hunting tactics.',
+      ubuntuConnection: 'The hyena\'s adaptability teaches us that success comes from learning and adjusting - adaptive AI decision making embodies the Ubuntu principle of collective growth through shared learning.'
+    }
+  },
+  {
+    id: 31,
+    title: 'The Wildebeest\'s Migration: Sequential Learning',
+    description: 'Discover sequential learning through the wildebeest\'s migration patterns',
+    objective: 'Learn how AI processes information in sequences and time series',
+    biome: biomes[0],
+    difficulty: 3,
+    duration: 650,
+    completed: false,
+    bioLumensReward: 30,
+    content: {
+      introduction: 'Wildebeest follow complex migration patterns that depend on seasonal changes, weather conditions, and the behavior of other animals. Sequential learning in AI involves processing information that comes in a specific order or over time.',
+      concepts: [
+        {
+          title: 'Temporal Patterns: The Wildebeest\'s Journey',
+          explanation: 'Wildebeest migration follows predictable patterns based on seasons, weather, and resource availability.',
+          technical: 'Sequential learning processes data that has a temporal or ordered structure, where the order matters.',
+          example: 'Just as wildebeest follow seasonal migration patterns, AI can process time series data like weather patterns or stock prices.'
+        },
+        {
+          title: 'Memory of Past Events: The Wildebeest\'s Experience',
+          explanation: 'Wildebeest remember past migration routes and use that knowledge to guide future journeys.',
+          technical: 'Sequential learning systems maintain memory of past events to inform current and future decisions.',
+          example: 'Just as wildebeest remember past migrations, AI systems can remember previous inputs to understand context.'
+        },
+        {
+          title: 'Predictive Behavior: The Wildebeest\'s Anticipation',
+          explanation: 'Wildebeest anticipate seasonal changes and adjust their behavior accordingly.',
+          technical: 'Sequential learning allows AI to predict future events based on patterns in historical data.',
+          example: 'Just as wildebeest anticipate seasonal changes, AI can predict future trends based on historical patterns.'
+        }
+      ],
+      practical: 'You\'ll explore how AI processes sequential information, just like wildebeest follow migration patterns over time.',
+      ubuntuConnection: 'The wildebeest migration teaches us that patterns emerge from collective movement over time - sequential AI learning embodies the Ubuntu principle of understanding through shared temporal experience.'
+    }
+  },
+  {
+    id: 32,
+    title: 'The Meerkat\'s Watch: Attention Mechanisms',
+    description: 'Learn about attention through the meerkat\'s vigilant behavior',
+    objective: 'Understand how AI systems focus on relevant information',
+    biome: biomes[0],
+    difficulty: 4,
+    duration: 700,
+    completed: false,
+    bioLumensReward: 30,
+    content: {
+      introduction: 'Meerkats take turns standing guard, watching for predators while others forage. This division of attention allows the group to stay safe while efficiently gathering food. Attention mechanisms in AI work similarly, allowing systems to focus on the most relevant information.',
+      concepts: [
+        {
+          title: 'Selective Focus: The Meerkat\'s Vigilance',
+          explanation: 'Meerkats focus their attention on potential threats while ignoring irrelevant distractions.',
+          technical: 'Attention mechanisms allow AI systems to focus computational resources on the most relevant parts of the input.',
+          example: 'Just as meerkats focus on threats, AI systems can focus on important words in a sentence or relevant parts of an image.'
+        },
+        {
+          title: 'Multi-Task Attention: The Meerkat\'s Roles',
+          explanation: 'Different meerkats attend to different tasks - some watch for predators, others forage for food.',
+          technical: 'AI systems can attend to multiple aspects of information simultaneously, processing different features in parallel.',
+          example: 'Just as meerkats handle multiple tasks, AI can process different aspects of complex data simultaneously.'
+        },
+        {
+          title: 'Dynamic Attention: The Meerkat\'s Adaptation',
+          explanation: 'Meerkats adjust their attention based on changing conditions and new threats.',
+          technical: 'Attention mechanisms can dynamically shift focus based on the context and importance of different information.',
+          example: 'Just as meerkats adapt their attention, AI systems can shift focus based on changing input or context.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems use attention mechanisms to focus on relevant information, just like meerkats maintain vigilant watch.',
+      ubuntuConnection: 'The meerkat\'s watch teaches us that collective safety comes from shared attention - attention mechanisms in AI embody the Ubuntu principle of collective focus for mutual benefit.'
+    }
+  },
+  {
+    id: 33,
+    title: 'The Ostrich\'s Speed: Fast Learning',
+    description: 'Explore fast learning through the ostrich\'s rapid adaptation',
+    objective: 'Learn how AI systems can learn quickly from limited data',
+    biome: biomes[0],
+    difficulty: 4,
+    duration: 750,
+    completed: false,
+    bioLumensReward: 35,
+    content: {
+      introduction: 'Ostriches can reach speeds of 70 km/h and adapt quickly to changing conditions. Fast learning in AI involves systems that can learn effectively from limited data and adapt quickly to new situations.',
+      concepts: [
+        {
+          title: 'Rapid Adaptation: The Ostrich\'s Speed',
+          explanation: 'Ostriches can quickly adapt their behavior based on immediate threats or opportunities.',
+          technical: 'Fast learning allows AI systems to adapt quickly to new situations with minimal training data.',
+          example: 'Just as ostriches adapt quickly to threats, AI systems can learn new tasks with few examples.'
+        },
+        {
+          title: 'Efficient Learning: The Ostrich\'s Economy',
+          explanation: 'Ostriches conserve energy by learning efficient strategies for survival and reproduction.',
+          technical: 'Fast learning systems use computational resources efficiently to learn from limited data.',
+          example: 'Just as ostriches learn efficient survival strategies, AI systems can learn effective solutions with minimal data.'
+        },
+        {
+          title: 'Transfer Learning: The Ostrich\'s Experience',
+          explanation: 'Ostriches apply knowledge from one situation to similar situations they encounter.',
+          technical: 'Fast learning often involves transferring knowledge from related tasks to new situations.',
+          example: 'Just as ostriches apply past experience to new situations, AI systems can transfer knowledge between related tasks.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can learn quickly and efficiently, just like ostriches adapt rapidly to changing conditions.',
+      ubuntuConnection: 'The ostrich\'s speed teaches us that adaptation is key to survival - fast AI learning embodies the Ubuntu principle of collective adaptation for community survival.'
+    }
+  },
+  {
+    id: 34,
+    title: 'The Vulture\'s Vision: Anomaly Detection',
+    description: 'Learn about anomaly detection through the vulture\'s keen observation',
+    objective: 'Understand how AI identifies unusual patterns and outliers',
+    biome: biomes[0],
+    difficulty: 4,
+    duration: 800,
+    completed: false,
+    bioLumensReward: 35,
+    content: {
+      introduction: 'Vultures have exceptional eyesight and can spot unusual patterns from great distances. Anomaly detection in AI involves identifying data points or patterns that are unusual or unexpected compared to normal behavior.',
+      concepts: [
+        {
+          title: 'Pattern Recognition: The Vulture\'s Sight',
+          explanation: 'Vultures can recognize normal patterns in the landscape and identify when something is unusual.',
+          technical: 'Anomaly detection involves learning normal patterns and identifying when data deviates from these patterns.',
+          example: 'Just as vultures spot unusual patterns, AI systems can detect fraudulent transactions or defective products.'
+        },
+        {
+          title: 'Outlier Detection: The Vulture\'s Focus',
+          explanation: 'Vultures focus their attention on unusual objects or behaviors that might indicate food or danger.',
+          technical: 'AI systems can identify outliers - data points that are significantly different from the majority.',
+          example: 'Just as vultures focus on unusual objects, AI can identify unusual network traffic or medical conditions.'
+        },
+        {
+          title: 'Context Awareness: The Vulture\'s Understanding',
+          explanation: 'Vultures understand the context of their environment and can distinguish between normal and abnormal situations.',
+          technical: 'Anomaly detection considers the context of the data to determine what constitutes unusual behavior.',
+          example: 'Just as vultures understand environmental context, AI systems can detect anomalies while considering surrounding conditions.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems detect anomalies and unusual patterns, just like vultures spot unusual objects from great distances.',
+      ubuntuConnection: 'The vulture\'s vision teaches us that awareness of the unusual protects the community - anomaly detection in AI embodies the Ubuntu principle of collective vigilance.'
+    }
+  },
+  {
+    id: 35,
+    title: 'The Warthog\'s Burrow: Data Storage',
+    description: 'Explore data storage through the warthog\'s burrow system',
+    objective: 'Learn how AI systems store and organize information',
+    biome: biomes[0],
+    difficulty: 4,
+    duration: 850,
+    completed: false,
+    bioLumensReward: 40,
+    content: {
+      introduction: 'Warthogs create complex burrow systems with multiple chambers for different purposes - sleeping, raising young, and escaping predators. Data storage in AI involves organizing and storing information in ways that make it accessible and useful.',
+      concepts: [
+        {
+          title: 'Organized Storage: The Warthog\'s Chambers',
+          explanation: 'Warthogs organize their burrows with different chambers for different purposes.',
+          technical: 'Data storage systems organize information in structured ways that make it easy to access and use.',
+          example: 'Just as warthogs organize their burrows, AI systems organize data into databases, files, and structured formats.'
+        },
+        {
+          title: 'Efficient Retrieval: The Warthog\'s Access',
+          explanation: 'Warthogs can quickly access different parts of their burrow system when needed.',
+          technical: 'Efficient data storage allows AI systems to quickly retrieve and use stored information.',
+          example: 'Just as warthogs access their burrows quickly, AI systems can retrieve stored data efficiently.'
+        },
+        {
+          title: 'Scalable Architecture: The Warthog\'s Expansion',
+          explanation: 'Warthogs can expand their burrow systems as their family grows.',
+          technical: 'Data storage systems can scale to accommodate growing amounts of information.',
+          example: 'Just as warthogs expand their burrows, AI systems can scale their storage to handle more data.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems store and organize data, just like warthogs organize their burrow systems.',
+      ubuntuConnection: 'The warthog\'s burrow teaches us that organized storage benefits the community - data storage in AI embodies the Ubuntu principle of shared resources for collective benefit.'
+    }
+  },
+  {
+    id: 36,
+    title: 'The Impala\'s Agility: Dynamic Programming',
+    description: 'Learn about dynamic programming through the impala\'s agile movements',
+    objective: 'Understand how AI solves complex problems by breaking them into smaller parts',
+    biome: biomes[0],
+    difficulty: 4,
+    duration: 900,
+    completed: false,
+    bioLumensReward: 40,
+    content: {
+      introduction: 'Impala move with incredible agility, making split-second decisions about direction and speed. Dynamic programming in AI involves solving complex problems by breaking them into smaller, manageable subproblems.',
+      concepts: [
+        {
+          title: 'Problem Decomposition: The Impala\'s Strategy',
+          explanation: 'Impala break complex movements into smaller, coordinated actions.',
+          technical: 'Dynamic programming breaks complex problems into smaller subproblems that can be solved more easily.',
+          example: 'Just as impala coordinate multiple muscle movements, AI systems can solve complex problems by combining simpler solutions.'
+        },
+        {
+          title: 'Optimal Solutions: The Impala\'s Efficiency',
+          explanation: 'Impala choose the most efficient path to avoid predators and reach safety.',
+          technical: 'Dynamic programming finds optimal solutions by considering all possible approaches and choosing the best one.',
+          example: 'Just as impala find optimal escape routes, AI systems can find optimal solutions to complex problems.'
+        },
+        {
+          title: 'Memory of Solutions: The Impala\'s Learning',
+          explanation: 'Impala remember successful escape strategies and apply them in similar situations.',
+          technical: 'Dynamic programming stores solutions to subproblems to avoid recalculating them.',
+          example: 'Just as impala remember successful strategies, AI systems can reuse solutions to similar subproblems.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems solve complex problems efficiently, just like impala coordinate agile movements.',
+      ubuntuConnection: 'The impala\'s agility teaches us that complex problems are solved through coordinated effort - dynamic programming embodies the Ubuntu principle of collective problem-solving.'
+    }
+  },
+  {
+    id: 37,
+    title: 'The Kudu\'s Camouflage: Feature Engineering',
+    description: 'Discover feature engineering through the kudu\'s natural camouflage',
+    objective: 'Learn how AI creates and selects important features from raw data',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 950,
+    completed: false,
+    bioLumensReward: 45,
+    content: {
+      introduction: 'Kudu have evolved distinctive markings and behaviors that help them blend into their environment. Feature engineering in AI involves creating and selecting the most important characteristics from raw data to help systems learn effectively.',
+      concepts: [
+        {
+          title: 'Feature Selection: The Kudu\'s Markings',
+          explanation: 'Kudu have evolved specific markings that help them survive in their environment.',
+          technical: 'Feature engineering involves selecting the most relevant characteristics from raw data for learning.',
+          example: 'Just as kudu have evolved useful markings, AI systems select the most important features from data.'
+        },
+        {
+          title: 'Feature Creation: The Kudu\'s Adaptation',
+          explanation: 'Kudu have developed behaviors and physical characteristics that enhance their survival.',
+          technical: 'Feature engineering can create new features by combining or transforming existing data.',
+          example: 'Just as kudu develop survival adaptations, AI systems can create new features from existing data.'
+        },
+        {
+          title: 'Feature Importance: The Kudu\'s Survival',
+          explanation: 'Some kudu characteristics are more important for survival than others.',
+          technical: 'Feature engineering identifies which features are most important for the learning task.',
+          example: 'Just as some kudu features are more important for survival, some data features are more important for AI learning.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems create and select important features, just like kudu have evolved useful characteristics.',
+      ubuntuConnection: 'The kudu\'s camouflage teaches us that adaptation creates useful features - feature engineering embodies the Ubuntu principle of collective adaptation for survival.'
+    }
+  },
+  {
+    id: 38,
+    title: 'The Springbok\'s Leap: Optimization Algorithms',
+    description: 'Learn about optimization through the springbok\'s efficient movements',
+    objective: 'Understand how AI systems find the best solutions to problems',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1000,
+    completed: false,
+    bioLumensReward: 45,
+    content: {
+      introduction: 'Springbok are known for their spectacular leaps, which are highly optimized for energy efficiency and survival. Optimization algorithms in AI work similarly, finding the best solutions to problems while minimizing costs.',
+      concepts: [
+        {
+          title: 'Efficiency Optimization: The Springbok\'s Leap',
+          explanation: 'Springbok optimize their leaps for maximum height and distance with minimum energy expenditure.',
+          technical: 'Optimization algorithms find the best solution while minimizing costs like time, energy, or resources.',
+          example: 'Just as springbok optimize their leaps, AI systems can optimize routes, schedules, or resource allocation.'
+        },
+        {
+          title: 'Gradient Descent: The Springbok\'s Path',
+          explanation: 'Springbok adjust their approach based on feedback from their environment.',
+          technical: 'Gradient descent optimization adjusts parameters based on feedback to find better solutions.',
+          example: 'Just as springbok adjust their approach, AI systems can iteratively improve their solutions.'
+        },
+        {
+          title: 'Global vs Local Optima: The Springbok\'s Choice',
+          explanation: 'Springbok must choose between local safety and global migration patterns.',
+          technical: 'Optimization algorithms must balance finding local improvements with discovering global best solutions.',
+          example: 'Just as springbok balance local and global needs, AI systems balance immediate improvements with long-term optimization.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems find optimal solutions, just like springbok optimize their movements for survival.',
+      ubuntuConnection: 'The springbok\'s leap teaches us that optimization benefits the individual and community - optimization algorithms embody the Ubuntu principle of collective efficiency.'
+    }
+  },
+  {
+    id: 39,
+    title: 'The Duiker\'s Alertness: Real-time Processing',
+    description: 'Explore real-time processing through the duiker\'s quick responses',
+    objective: 'Learn how AI systems process information in real-time',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1050,
+    completed: false,
+    bioLumensReward: 50,
+    content: {
+      introduction: 'Duiker are small antelope known for their alertness and quick responses to threats. Real-time processing in AI involves systems that can process information and respond immediately as it arrives.',
+      concepts: [
+        {
+          title: 'Immediate Response: The Duiker\'s Alertness',
+          explanation: 'Duiker respond immediately to threats, without time for complex analysis.',
+          technical: 'Real-time processing systems respond immediately to input without significant delay.',
+          example: 'Just as duiker respond immediately to threats, AI systems can process sensor data in real-time.'
+        },
+        {
+          title: 'Stream Processing: The Duiker\'s Continuous Monitoring',
+          explanation: 'Duiker continuously monitor their environment for threats and opportunities.',
+          technical: 'Real-time processing handles continuous streams of data as they arrive.',
+          example: 'Just as duiker monitor their environment continuously, AI systems can process streaming data.'
+        },
+        {
+          title: 'Efficient Processing: The Duiker\'s Speed',
+          explanation: 'Duiker process information quickly to make rapid decisions.',
+          technical: 'Real-time processing systems are optimized for speed and efficiency.',
+          example: 'Just as duiker process information quickly, AI systems can make rapid decisions from streaming data.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems process information in real-time, just like duiker respond quickly to their environment.',
+      ubuntuConnection: 'The duiker\'s alertness teaches us that quick response protects the community - real-time AI processing embodies the Ubuntu principle of collective vigilance.'
+    }
+  },
+  {
+    id: 40,
+    title: 'The Steenbok\'s Stealth: Privacy-Preserving AI',
+    description: 'Learn about privacy-preserving AI through the steenbok\'s secretive behavior',
+    objective: 'Understand how AI can learn while protecting individual privacy',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1100,
+    completed: false,
+    bioLumensReward: 50,
+    content: {
+      introduction: 'Steenbok are small, secretive antelope that avoid detection while still participating in the ecosystem. Privacy-preserving AI allows systems to learn from data while protecting individual privacy and confidentiality.',
+      concepts: [
+        {
+          title: 'Data Protection: The Steenbok\'s Secrecy',
+          explanation: 'Steenbok protect themselves by remaining hidden while still contributing to the ecosystem.',
+          technical: 'Privacy-preserving AI protects individual data while still learning from collective information.',
+          example: 'Just as steenbok remain hidden while contributing to the ecosystem, AI can learn from data without exposing individual information.'
+        },
+        {
+          title: 'Federated Learning: The Steenbok\'s Distribution',
+          explanation: 'Steenbok are distributed across the landscape, each contributing to the ecosystem locally.',
+          technical: 'Federated learning allows AI to learn from distributed data without centralizing it.',
+          example: 'Just as steenbok contribute locally to the ecosystem, AI systems can learn from distributed data sources.'
+        },
+        {
+          title: 'Differential Privacy: The Steenbok\'s Anonymity',
+          explanation: 'Steenbok avoid individual identification while still participating in population dynamics.',
+          technical: 'Differential privacy adds noise to data to protect individual privacy while preserving useful patterns.',
+          example: 'Just as steenbok avoid individual identification, AI systems can learn patterns while protecting individual privacy.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can learn while protecting privacy, just like steenbok contribute to the ecosystem while remaining hidden.',
+      ubuntuConnection: 'The steenbok\'s stealth teaches us that individual protection enables collective participation - privacy-preserving AI embodies the Ubuntu principle of collective benefit through individual protection.'
+    }
+  },
+  {
+    id: 41,
+    title: 'The Reedbuck\'s Rhythm: Temporal Processing',
+    description: 'Learn about temporal processing through the reedbuck\'s rhythmic behavior',
+    objective: 'Understand how AI processes time-based information',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1150,
+    completed: false,
+    bioLumensReward: 55,
+    content: {
+      introduction: 'Reedbuck follow rhythmic patterns in their daily activities - feeding, resting, and moving in predictable cycles. Temporal processing in AI involves understanding and processing information that changes over time.',
+      concepts: [
+        {
+          title: 'Time Series Analysis: The Reedbuck\'s Cycles',
+          explanation: 'Reedbuck follow daily and seasonal cycles that can be predicted and analyzed.',
+          technical: 'Temporal processing analyzes data that changes over time, identifying patterns and trends.',
+          example: 'Just as reedbuck follow daily cycles, AI can analyze time series data like weather patterns or stock prices.'
+        },
+        {
+          title: 'Sequence Modeling: The Reedbuck\'s Patterns',
+          explanation: 'Reedbuck behavior follows predictable sequences that can be modeled and understood.',
+          technical: 'Sequence modeling captures the order and timing of events in temporal data.',
+          example: 'Just as reedbuck follow behavioral sequences, AI can model sequences in language or music.'
+        },
+        {
+          title: 'Predictive Timing: The Reedbuck\'s Anticipation',
+          explanation: 'Reedbuck anticipate environmental changes and adjust their behavior accordingly.',
+          technical: 'Temporal processing allows AI to predict future events based on historical patterns.',
+          example: 'Just as reedbuck anticipate seasonal changes, AI can predict future trends from historical data.'
+        }
+      ],
+      practical: 'You\'ll explore how AI processes temporal information, just like reedbuck follow rhythmic patterns over time.',
+      ubuntuConnection: 'The reedbuck\'s rhythm teaches us that timing connects us to natural cycles - temporal AI processing embodies the Ubuntu principle of harmony with natural patterns.'
+    }
+  },
+  {
+    id: 42,
+    title: 'The Klipspringer\'s Balance: Equilibrium Learning',
+    description: 'Explore equilibrium learning through the klipspringer\'s balance',
+    objective: 'Learn how AI systems find stable solutions',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1200,
+    completed: false,
+    bioLumensReward: 55,
+    content: {
+      introduction: 'Klipspringer are small antelope that can balance on the narrowest of ledges, maintaining perfect equilibrium. Equilibrium learning in AI involves finding stable solutions that balance competing objectives.',
+      concepts: [
+        {
+          title: 'Stable Solutions: The Klipspringer\'s Balance',
+          explanation: 'Klipspringer maintain perfect balance even on narrow, unstable surfaces.',
+          technical: 'Equilibrium learning finds solutions that remain stable under changing conditions.',
+          example: 'Just as klipspringer maintain balance, AI systems can find stable solutions to complex problems.'
+        },
+        {
+          title: 'Multi-Objective Optimization: The Klipspringer\'s Trade-offs',
+          explanation: 'Klipspringer balance multiple needs - safety, food, and reproduction.',
+          technical: 'Equilibrium learning balances multiple competing objectives to find optimal solutions.',
+          example: 'Just as klipspringer balance multiple needs, AI systems can optimize for multiple objectives simultaneously.'
+        },
+        {
+          title: 'Adaptive Stability: The Klipspringer\'s Flexibility',
+          explanation: 'Klipspringer adapt their balance to changing conditions while maintaining stability.',
+          technical: 'Equilibrium learning allows AI systems to adapt while maintaining stable performance.',
+          example: 'Just as klipspringer adapt their balance, AI systems can adapt to new data while maintaining performance.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems find stable, balanced solutions, just like klipspringer maintain perfect equilibrium.',
+      ubuntuConnection: 'The klipspringer\'s balance teaches us that stability comes from harmony - equilibrium AI learning embodies the Ubuntu principle of balanced collective growth.'
+    }
+  },
+  {
+    id: 43,
+    title: 'The Oribi\'s Alertness: Anomaly Detection',
+    description: 'Learn about anomaly detection through the oribi\'s keen awareness',
+    objective: 'Understand how AI identifies unusual patterns',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1250,
+    completed: false,
+    bioLumensReward: 60,
+    content: {
+      introduction: 'Oribi are highly alert antelope that can detect the slightest unusual movement or sound. Anomaly detection in AI involves identifying patterns that are unusual or unexpected compared to normal behavior.',
+      concepts: [
+        {
+          title: 'Pattern Recognition: The Oribi\'s Awareness',
+          explanation: 'Oribi recognize normal patterns in their environment and detect when something is unusual.',
+          technical: 'Anomaly detection learns normal patterns and identifies when data deviates from these patterns.',
+          example: 'Just as oribi detect unusual movements, AI systems can detect fraudulent transactions or network intrusions.'
+        },
+        {
+          title: 'Threshold Detection: The Oribi\'s Sensitivity',
+          explanation: 'Oribi have finely tuned sensitivity to detect threats while avoiding false alarms.',
+          technical: 'Anomaly detection uses thresholds to distinguish between normal variation and true anomalies.',
+          example: 'Just as oribi balance sensitivity and specificity, AI systems can adjust detection thresholds.'
+        },
+        {
+          title: 'Contextual Understanding: The Oribi\'s Wisdom',
+          explanation: 'Oribi understand the context of their environment to distinguish threats from normal events.',
+          technical: 'Anomaly detection considers context to determine what constitutes unusual behavior.',
+          example: 'Just as oribi understand environmental context, AI systems can detect anomalies while considering surrounding conditions.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems detect anomalies and unusual patterns, just like oribi detect threats in their environment.',
+      ubuntuConnection: 'The oribi\'s alertness teaches us that awareness protects the community - anomaly detection in AI embodies the Ubuntu principle of collective vigilance.'
+    }
+  },
+  {
+    id: 44,
+    title: 'The Waterbuck\'s Adaptation: Transfer Learning',
+    description: 'Discover transfer learning through the waterbuck\'s adaptation',
+    objective: 'Learn how AI applies knowledge from one domain to another',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1300,
+    completed: false,
+    bioLumensReward: 60,
+    content: {
+      introduction: 'Waterbuck have adapted to both aquatic and terrestrial environments, applying skills learned in one environment to the other. Transfer learning in AI involves applying knowledge learned in one domain to improve performance in a related domain.',
+      concepts: [
+        {
+          title: 'Knowledge Transfer: The Waterbuck\'s Skills',
+          explanation: 'Waterbuck apply swimming skills to terrestrial movement and vice versa.',
+          technical: 'Transfer learning applies knowledge from a source domain to improve performance in a target domain.',
+          example: 'Just as waterbuck transfer skills between environments, AI can transfer knowledge from image recognition to medical diagnosis.'
+        },
+        {
+          title: 'Feature Reuse: The Waterbuck\'s Adaptations',
+          explanation: 'Waterbuck reuse physical adaptations for different purposes in different environments.',
+          technical: 'Transfer learning reuses learned features and representations across related tasks.',
+          example: 'Just as waterbuck reuse adaptations, AI systems can reuse learned features across related domains.'
+        },
+        {
+          title: 'Domain Adaptation: The Waterbuck\'s Flexibility',
+          explanation: 'Waterbuck adapt their behavior to different environments while maintaining core abilities.',
+          technical: 'Transfer learning allows AI systems to adapt to new domains while preserving useful knowledge.',
+          example: 'Just as waterbuck adapt to different environments, AI systems can adapt to new data distributions.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can transfer knowledge between domains, just like waterbuck adapt skills between environments.',
+      ubuntuConnection: 'The waterbuck\'s adaptation teaches us that shared knowledge benefits all environments - transfer learning embodies the Ubuntu principle of collective knowledge sharing.'
+    }
+  },
+  {
+    id: 45,
+    title: 'The Hartebeest\'s Endurance: Continuous Learning',
+    description: 'Learn about continuous learning through the hartebeest\'s endurance',
+    objective: 'Understand how AI systems learn continuously over time',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1350,
+    completed: false,
+    bioLumensReward: 65,
+    content: {
+      introduction: 'Hartebeest are known for their endurance, able to travel long distances and adapt to changing conditions over extended periods. Continuous learning in AI involves systems that can learn and adapt continuously over time.',
+      concepts: [
+        {
+          title: 'Ongoing Adaptation: The Hartebeest\'s Journey',
+          explanation: 'Hartebeest continuously adapt to changing conditions throughout their long migrations.',
+          technical: 'Continuous learning allows AI systems to adapt and improve over time as new data becomes available.',
+          example: 'Just as hartebeest adapt during migration, AI systems can continuously improve their performance.'
+        },
+        {
+          title: 'Incremental Learning: The Hartebeest\'s Progress',
+          explanation: 'Hartebeest make incremental progress, learning from each step of their journey.',
+          technical: 'Continuous learning involves incremental updates to models as new information becomes available.',
+          example: 'Just as hartebeest learn incrementally, AI systems can update their knowledge gradually.'
+        },
+        {
+          title: 'Long-term Memory: The Hartebeest\'s Experience',
+          explanation: 'Hartebeest remember experiences from throughout their long lives.',
+          technical: 'Continuous learning systems maintain and build upon knowledge accumulated over time.',
+          example: 'Just as hartebeest remember long-term experiences, AI systems can maintain knowledge over extended periods.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can learn continuously over time, just like hartebeest adapt throughout their long journeys.',
+      ubuntuConnection: 'The hartebeest\'s endurance teaches us that sustained effort leads to lasting wisdom - continuous AI learning embodies the Ubuntu principle of collective growth over time.'
+    }
+  },
+  {
+    id: 46,
+    title: 'The Topi\'s Territory: Spatial Learning',
+    description: 'Explore spatial learning through the topi\'s territorial behavior',
+    objective: 'Learn how AI processes spatial information and relationships',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1400,
+    completed: false,
+    bioLumensReward: 65,
+    content: {
+      introduction: 'Topi are territorial antelope that understand complex spatial relationships in their environment. Spatial learning in AI involves understanding and processing information about spatial relationships and geometric patterns.',
+      concepts: [
+        {
+          title: 'Spatial Relationships: The Topi\'s Territory',
+          explanation: 'Topi understand the spatial layout of their territory and the relationships between different areas.',
+          technical: 'Spatial learning involves understanding geometric relationships and spatial patterns in data.',
+          example: 'Just as topi understand territorial relationships, AI systems can understand spatial relationships in images or maps.'
+        },
+        {
+          title: 'Geometric Patterns: The Topi\'s Navigation',
+          explanation: 'Topi navigate complex terrain using geometric understanding of their environment.',
+          technical: 'Spatial learning can identify geometric patterns and spatial structures in data.',
+          example: 'Just as topi navigate using spatial understanding, AI can process geometric patterns in computer vision.'
+        },
+        {
+          title: 'Spatial Memory: The Topi\'s Knowledge',
+          explanation: 'Topi remember the spatial layout of their territory and important locations.',
+          technical: 'Spatial learning systems can remember and use spatial information for navigation and understanding.',
+          example: 'Just as topi remember spatial layouts, AI systems can remember and use spatial relationships.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems process spatial information, just like topi understand spatial relationships in their territory.',
+      ubuntuConnection: 'The topi\'s territory teaches us that spatial understanding connects us to our environment - spatial AI learning embodies the Ubuntu principle of connection to place and space.'
+    }
+  },
+  {
+    id: 47,
+    title: 'The Eland\'s Wisdom: Knowledge Representation',
+    description: 'Learn about knowledge representation through the eland\'s wisdom',
+    objective: 'Understand how AI systems represent and organize knowledge',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1450,
+    completed: false,
+    bioLumensReward: 70,
+    content: {
+      introduction: 'Eland are the largest antelope and are known for their wisdom and calm demeanor. Knowledge representation in AI involves how systems organize, structure, and represent information to make it useful for learning and reasoning.',
+      concepts: [
+        {
+          title: 'Structured Knowledge: The Eland\'s Understanding',
+          explanation: 'Eland organize their understanding of the environment in structured ways.',
+          technical: 'Knowledge representation organizes information in structured formats that facilitate learning and reasoning.',
+          example: 'Just as eland organize environmental knowledge, AI systems can organize information in knowledge graphs.'
+        },
+        {
+          title: 'Semantic Understanding: The Eland\'s Meaning',
+          explanation: 'Eland understand the meaning and significance of different environmental cues.',
+          technical: 'Knowledge representation captures semantic meaning and relationships between concepts.',
+          example: 'Just as eland understand environmental meaning, AI systems can understand semantic relationships in language.'
+        },
+        {
+          title: 'Inferential Reasoning: The Eland\'s Logic',
+          explanation: 'Eland use their knowledge to make logical inferences about their environment.',
+          technical: 'Knowledge representation enables AI systems to reason and make inferences from stored knowledge.',
+          example: 'Just as eland reason about their environment, AI systems can reason about relationships in knowledge bases.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems represent and organize knowledge, just like eland organize their understanding of the environment.',
+      ubuntuConnection: 'The eland\'s wisdom teaches us that organized knowledge benefits the community - knowledge representation in AI embodies the Ubuntu principle of shared understanding.'
+    }
+  },
+  {
+    id: 48,
+    title: 'The Roan\'s Resilience: Robust Learning',
+    description: 'Explore robust learning through the roan antelope\'s resilience',
+    objective: 'Learn how AI systems maintain performance under challenging conditions',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1500,
+    completed: false,
+    bioLumensReward: 70,
+    content: {
+      introduction: 'Roan antelope are highly resilient, able to survive in harsh conditions and adapt to changing environments. Robust learning in AI involves systems that can maintain good performance even when faced with challenging or noisy data.',
+      concepts: [
+        {
+          title: 'Noise Resistance: The Roan\'s Adaptability',
+          explanation: 'Roan antelope can function effectively even in noisy or challenging environments.',
+          technical: 'Robust learning allows AI systems to perform well even with noisy or incomplete data.',
+          example: 'Just as roan antelope adapt to challenging conditions, AI systems can handle noisy or corrupted data.'
+        },
+        {
+          title: 'Outlier Handling: The Roan\'s Flexibility',
+          explanation: 'Roan antelope can handle unusual situations and adapt their behavior accordingly.',
+          technical: 'Robust learning systems can handle outliers and unusual data points without significant performance degradation.',
+          example: 'Just as roan antelope handle unusual situations, AI systems can handle unexpected data patterns.'
+        },
+        {
+          title: 'Stable Performance: The Roan\'s Consistency',
+          explanation: 'Roan antelope maintain consistent performance across different environmental conditions.',
+          technical: 'Robust learning ensures consistent performance across different data distributions and conditions.',
+          example: 'Just as roan antelope maintain performance across conditions, AI systems can maintain performance across different datasets.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can maintain robust performance, just like roan antelope adapt to challenging conditions.',
+      ubuntuConnection: 'The roan\'s resilience teaches us that strength comes from adaptability - robust AI learning embodies the Ubuntu principle of collective resilience.'
+    }
+  },
+  {
+    id: 49,
+    title: 'The Sable\'s Grace: Elegant Solutions',
+    description: 'Learn about elegant solutions through the sable antelope\'s grace',
+    objective: 'Understand how AI finds simple, elegant solutions to complex problems',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1550,
+    completed: false,
+    bioLumensReward: 75,
+    content: {
+      introduction: 'Sable antelope move with remarkable grace and elegance, finding the most efficient and beautiful solutions to the challenges of survival. Elegant solutions in AI involve finding simple, efficient, and beautiful solutions to complex problems.',
+      concepts: [
+        {
+          title: 'Simplicity: The Sable\'s Grace',
+          explanation: 'Sable antelope find the simplest and most elegant solutions to survival challenges.',
+          technical: 'Elegant solutions in AI find simple, efficient solutions that are easy to understand and implement.',
+          example: 'Just as sable antelope find elegant solutions, AI systems can find simple solutions to complex problems.'
+        },
+        {
+          title: 'Efficiency: The Sable\'s Economy',
+          explanation: 'Sable antelope use energy efficiently, finding the most effective solutions with minimal waste.',
+          technical: 'Elegant solutions use computational resources efficiently while achieving good performance.',
+          example: 'Just as sable antelope use energy efficiently, AI systems can find efficient computational solutions.'
+        },
+        {
+          title: 'Beauty: The Sable\'s Aesthetics',
+          explanation: 'Sable antelope solutions are not just functional but also beautiful and harmonious.',
+          technical: 'Elegant solutions in AI are not just effective but also beautiful, simple, and harmonious.',
+          example: 'Just as sable antelope solutions are beautiful, AI solutions can be elegant and aesthetically pleasing.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can find elegant solutions, just like sable antelope find graceful solutions to survival challenges.',
+      ubuntuConnection: 'The sable\'s grace teaches us that beauty and function can coexist - elegant AI solutions embody the Ubuntu principle of harmony between form and function.'
+    }
+  },
+  {
+    id: 50,
+    title: 'The Tsessebe\'s Speed: Efficient Learning',
+    description: 'Learn about efficient learning through the tsessebe\'s speed',
+    objective: 'Understand how AI systems learn efficiently with minimal resources',
+    biome: biomes[0],
+    difficulty: 5,
+    duration: 1600,
+    completed: false,
+    bioLumensReward: 75,
+    content: {
+      introduction: 'Tsessebe are among the fastest antelope, able to reach high speeds efficiently and adapt quickly to changing conditions. Efficient learning in AI involves systems that can learn effectively with minimal computational resources and data.',
+      concepts: [
+        {
+          title: 'Resource Efficiency: The Tsessebe\'s Economy',
+          explanation: 'Tsessebe achieve high performance with minimal energy expenditure.',
+          technical: 'Efficient learning achieves good performance with minimal computational resources and data.',
+          example: 'Just as tsessebe use energy efficiently, AI systems can learn effectively with limited computational resources.'
+        },
+        {
+          title: 'Fast Convergence: The Tsessebe\'s Speed',
+          explanation: 'Tsessebe can quickly adapt to new conditions and reach optimal performance.',
+          technical: 'Efficient learning systems converge quickly to good solutions with minimal training time.',
+          example: 'Just as tsessebe adapt quickly, AI systems can learn new tasks efficiently with minimal training.'
+        },
+        {
+          title: 'Optimal Performance: The Tsessebe\'s Excellence',
+          explanation: 'Tsessebe achieve excellent performance despite resource constraints.',
+          technical: 'Efficient learning achieves optimal performance given the available resources and constraints.',
+          example: 'Just as tsessebe achieve excellent performance efficiently, AI systems can achieve good results with limited resources.'
+        }
+      ],
+      practical: 'You\'ll explore how AI systems can learn efficiently, just like tsessebe achieve high performance with minimal resources.',
+      ubuntuConnection: 'The tsessebe\'s efficiency teaches us that optimal performance comes from resource wisdom - efficient AI learning embodies the Ubuntu principle of collective resource optimization.'
     }
   }
 ];
