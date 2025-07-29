@@ -223,6 +223,186 @@ export const lessons: Lesson[] = [
       practical: 'You\'ll explore how different types of memory work in neural networks, from simple weight storage to complex attention mechanisms.',
       ubuntuConnection: 'Elephants share memories across generations, teaching young ones important knowledge - neural networks share learned patterns across different tasks.'
     }
+  },
+  {
+    id: 6,
+    title: 'The Baobab\'s Wisdom: Deep Learning Foundations',
+    description: 'Discover deep learning through the ancient wisdom of the baobab tree',
+    objective: 'Understand the fundamentals of deep learning and neural network depth',
+    biome: biomes[1],
+    difficulty: 2,
+    duration: 400,
+    completed: false,
+    bioLumensReward: 25,
+    content: {
+      introduction: 'The baobab tree stands as a symbol of wisdom and depth in African culture. Just as the baobab\'s roots reach deep into the earth, deep learning networks reach deep into data to find hidden patterns.',
+      concepts: [
+        {
+          title: 'Depth: The Baobab\'s Many Layers',
+          explanation: 'The baobab tree has multiple layers - bark, wood, and roots that extend deep underground. Deep neural networks have multiple hidden layers that process information at different levels of abstraction.',
+          technical: 'Deep learning uses neural networks with many hidden layers (typically 10-100+ layers), allowing for hierarchical feature extraction and complex pattern recognition.',
+          example: 'Just as a baobab\'s roots process nutrients at different depths, deep networks process information at different levels - from simple edges to complex objects.'
+        },
+        {
+          title: 'Feature Hierarchy: The Baobab\'s Growth Pattern',
+          explanation: 'The baobab grows in stages - first roots, then trunk, then branches, then leaves. Deep networks build features in stages - simple features combine to form complex ones.',
+          technical: 'Early layers detect low-level features like edges and textures. Middle layers combine these into shapes and patterns. Deep layers recognize complex objects and concepts.',
+          example: 'A baobab\'s growth mirrors how deep networks learn - from simple building blocks to complex structures.'
+        },
+        {
+          title: 'Representation Learning: The Baobab\'s Adaptation',
+          explanation: 'The baobab adapts its structure to survive in harsh environments. Deep networks learn representations that are useful for their specific tasks.',
+          technical: 'Representation learning allows networks to automatically discover useful features from raw data, rather than requiring manual feature engineering.',
+          example: 'Just as the baobab adapts to its environment, deep networks adapt their internal representations to their specific tasks.'
+        }
+      ],
+      practical: 'You\'ll explore how deep networks process information through multiple layers, building increasingly complex representations.',
+      ubuntuConnection: 'The baobab teaches us that wisdom comes from deep roots and many layers of experience - deep learning shows us that intelligence comes from many layers of processing.'
+    }
+  },
+  {
+    id: 7,
+    title: 'The Weaver Bird\'s Nest: Convolutional Neural Networks',
+    description: 'Learn about CNNs through the intricate nest-building of weaver birds',
+    objective: 'Understand convolutional neural networks and their applications',
+    biome: biomes[1],
+    difficulty: 3,
+    duration: 450,
+    completed: false,
+    bioLumensReward: 30,
+    content: {
+      introduction: 'Weaver birds create intricate nests by weaving together many small pieces. Convolutional Neural Networks (CNNs) work similarly, combining many small patterns to recognize complex images.',
+      concepts: [
+        {
+          title: 'Convolution: The Weaver\'s Pattern',
+          explanation: 'Weaver birds repeat the same weaving pattern many times to build their nests. Convolution applies the same filter pattern across the entire image.',
+          technical: 'Convolution uses small filters that slide across the input, detecting features like edges, textures, and patterns regardless of their location.',
+          example: 'Just as a weaver bird uses the same technique to weave each part of the nest, convolution uses the same filter to detect patterns anywhere in the image.'
+        },
+        {
+          title: 'Pooling: The Weaver\'s Selection',
+          explanation: 'Weaver birds select the strongest materials for their nests. Pooling selects the most important features from each region.',
+          technical: 'Pooling reduces the spatial dimensions of the feature maps, keeping only the most important information and making the network more robust.',
+          example: 'Just as a weaver bird chooses the best materials, pooling chooses the most important features from each area.'
+        },
+        {
+          title: 'Feature Maps: The Weaver\'s Blueprint',
+          explanation: 'Weaver birds follow a mental blueprint to create their nests. Feature maps are the network\'s blueprint for recognizing patterns.',
+          technical: 'Feature maps show how the network "sees" the input at different levels of abstraction, from simple edges to complex objects.',
+          example: 'Each feature map is like a different blueprint showing how the network recognizes specific patterns in the image.'
+        }
+      ],
+      practical: 'You\'ll see how CNNs process images through convolution and pooling, building up from simple patterns to complex objects.',
+      ubuntuConnection: 'Weaver birds work together in colonies, each contributing to the community - CNNs work together, each layer contributing to the final understanding.'
+    }
+  },
+  {
+    id: 8,
+    title: 'The Termite Colony: Recurrent Neural Networks',
+    description: 'Explore RNNs through the collective intelligence of termite colonies',
+    objective: 'Understand recurrent neural networks and sequential data processing',
+    biome: biomes[1],
+    difficulty: 3,
+    duration: 500,
+    completed: false,
+    bioLumensReward: 30,
+    content: {
+      introduction: 'Termite colonies work together over time, with each termite\'s actions influencing the future behavior of the colony. Recurrent Neural Networks (RNNs) work similarly, with each step influencing the next.',
+      concepts: [
+        {
+          title: 'Sequential Processing: The Termite\'s Memory',
+          explanation: 'Termites remember what happened before and use that information to decide what to do next. RNNs maintain memory of previous inputs to process sequences.',
+          technical: 'RNNs have hidden states that carry information from previous time steps, allowing them to process sequential data like text, speech, or time series.',
+          example: 'Just as termites remember the colony\'s history, RNNs remember the sequence of inputs they\'ve processed.'
+        },
+        {
+          title: 'Hidden States: The Colony\'s Knowledge',
+          explanation: 'The termite colony maintains collective knowledge about its environment and history. RNNs maintain hidden states that encode information about the sequence.',
+          technical: 'Hidden states are the network\'s internal memory, containing information about all previous inputs in a compressed form.',
+          example: 'The hidden state is like the colony\'s collective memory, containing information about everything that has happened before.'
+        },
+        {
+          title: 'Backpropagation Through Time: The Colony\'s Learning',
+          explanation: 'Termite colonies learn from their mistakes and adapt their behavior. RNNs learn by backpropagating errors through time.',
+          technical: 'BPTT allows RNNs to learn from sequences by propagating gradients backward through the entire sequence.',
+          example: 'Just as the colony learns from past experiences, RNNs learn from the entire sequence of inputs.'
+        }
+      ],
+      practical: 'You\'ll explore how RNNs process sequential data, maintaining memory and learning from the entire sequence.',
+      ubuntuConnection: 'Termite colonies demonstrate collective intelligence - each individual contributes to the whole. RNNs show how individual neurons contribute to the network\'s understanding of sequences.'
+    }
+  },
+  {
+    id: 9,
+    title: 'The Honey Badger\'s Strategy: Optimization Algorithms',
+    description: 'Learn about optimization through the honey badger\'s relentless pursuit',
+    objective: 'Master different optimization algorithms and their applications',
+    biome: biomes[1],
+    difficulty: 4,
+    duration: 550,
+    completed: false,
+    bioLumensReward: 35,
+    content: {
+      introduction: 'The honey badger is known for its relentless pursuit of goals, adapting its strategy based on what works. Optimization algorithms work similarly, continuously adjusting to find the best solution.',
+      concepts: [
+        {
+          title: 'Gradient Descent: The Badger\'s Path',
+          explanation: 'The honey badger follows the scent trail, always moving toward stronger signals. Gradient descent follows the gradient, always moving toward better solutions.',
+          technical: 'Gradient descent finds the direction of steepest descent in the loss landscape and updates parameters accordingly.',
+          example: 'Just as the badger follows the strongest scent, gradient descent follows the steepest path toward the minimum.'
+        },
+        {
+          title: 'Momentum: The Badger\'s Persistence',
+          explanation: 'The honey badger maintains momentum even when obstacles appear. Momentum helps optimization algorithms maintain direction through difficult terrain.',
+          technical: 'Momentum adds a fraction of the previous update to the current update, helping the algorithm overcome local minima and plateaus.',
+          example: 'Just as the badger doesn\'t stop for every obstacle, momentum helps the algorithm continue through difficult regions.'
+        },
+        {
+          title: 'Adaptive Learning: The Badger\'s Intelligence',
+          explanation: 'The honey badger adapts its strategy based on the terrain and prey. Adaptive optimization algorithms adjust their learning rates based on the problem.',
+          technical: 'Algorithms like Adam and RMSprop adapt their learning rates for each parameter, improving convergence on complex problems.',
+          example: 'Just as the badger adapts to different situations, adaptive algorithms adapt to different types of problems.'
+        }
+      ],
+      practical: 'You\'ll explore different optimization algorithms and see how they navigate the complex landscape of neural network training.',
+      ubuntuConnection: 'The honey badger teaches us that persistence and adaptation lead to success - optimization algorithms show us that intelligent search strategies lead to better solutions.'
+    }
+  },
+  {
+    id: 10,
+    title: 'The Leopard\'s Precision: Regularization Techniques',
+    description: 'Discover regularization through the leopard\'s precise hunting techniques',
+    objective: 'Understand regularization methods to prevent overfitting',
+    biome: biomes[1],
+    difficulty: 4,
+    duration: 600,
+    completed: false,
+    bioLumensReward: 35,
+    content: {
+      introduction: 'The leopard is a master of precision, using exactly the right amount of force and energy for each hunt. Regularization techniques help neural networks use exactly the right amount of complexity.',
+      concepts: [
+        {
+          title: 'Dropout: The Leopard\'s Adaptability',
+          explanation: 'The leopard adapts its hunting strategy based on the prey and environment. Dropout randomly deactivates neurons during training, forcing the network to adapt.',
+          technical: 'Dropout randomly sets a fraction of neurons to zero during training, preventing the network from becoming too dependent on specific neurons.',
+          example: 'Just as the leopard adapts to different situations, dropout forces the network to adapt to different combinations of neurons.'
+        },
+        {
+          title: 'Weight Decay: The Leopard\'s Efficiency',
+          explanation: 'The leopard uses only the energy it needs, avoiding waste. Weight decay penalizes large weights, encouraging the network to use only the complexity it needs.',
+          technical: 'Weight decay adds a penalty term to the loss function that encourages smaller weights, preventing overfitting.',
+          example: 'Just as the leopard conserves energy, weight decay conserves model complexity.'
+        },
+        {
+          title: 'Early Stopping: The Leopard\'s Timing',
+          explanation: 'The leopard knows exactly when to strike - not too early, not too late. Early stopping stops training when the model starts to overfit.',
+          technical: 'Early stopping monitors validation performance and stops training when it starts to degrade, preventing overfitting.',
+          example: 'Just as the leopard times its attack perfectly, early stopping times the end of training perfectly.'
+        }
+      ],
+      practical: 'You\'ll explore different regularization techniques and see how they help neural networks generalize better.',
+      ubuntuConnection: 'The leopard teaches us that precision and restraint lead to success - regularization shows us that controlled complexity leads to better generalization.'
+    }
   }
 ];
 
