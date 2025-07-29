@@ -4,13 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import { useGameState } from '@/hooks/useGameState';
 import { useAudio } from '@/hooks/useAudio';
 import { biomes, lessons } from '@/data/lessons';
+import { debugGameState, resetGameState, unlockBiomes } from '@/utils/gameUtils';
 import BioLumensDisplay from './BioLumensDisplay';
 import BiomeCard from './BiomeCard';
 import LessonCard from './LessonCard';
 
 const HomeScreen: React.FC = () => {
   const navigate = useNavigate();
-  const { gameState, startLesson } = useGameState();
+  const { gameState, startLesson, updateProgress, clearGameState } = useGameState();
   const { playSound } = useAudio();
   const [selectedBiome, setSelectedBiome] = useState(biomes[0]);
 
@@ -34,6 +35,22 @@ const HomeScreen: React.FC = () => {
     startLesson(lesson);
     playSound('button-click');
     navigate(`/lesson/${lesson.id}`);
+  };
+
+  const handleDebugReset = () => {
+    const newState = resetGameState();
+    updateProgress(newState.userProgress);
+    console.log('Game state reset!');
+  };
+
+  const handleDebugUnlockAll = () => {
+    const allBiomeIds = biomes.map(biome => biome.id);
+    updateProgress(unlockBiomes(allBiomeIds));
+    console.log('All biomes unlocked!');
+  };
+
+  const handleDebugLog = () => {
+    debugGameState(gameState);
   };
 
   const availableLessons = lessons.filter(lesson => 
@@ -76,7 +93,7 @@ const HomeScreen: React.FC = () => {
                 key={biome.id}
                 biome={biome}
                 onSelect={handleBiomeSelect}
-                isUnlocked={biome.unlocked}
+                isUnlocked={gameState.userProgress.unlockedBiomes.includes(biome.id)}
                 isSelected={selectedBiome.id === biome.id}
               />
             ))}
@@ -124,6 +141,43 @@ const HomeScreen: React.FC = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Debug Section - Only show in development */}
+      {process.env.NODE_ENV === 'development' && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="p-4 border-t border-night-600"
+        >
+          <h3 className="text-sm font-semibold mb-2 text-gray-400">Debug Tools</h3>
+          <div className="flex gap-2">
+            <button
+              onClick={handleDebugReset}
+              className="px-3 py-1 text-xs bg-red-600 hover:bg-red-700 text-white rounded"
+            >
+              Reset Progress
+            </button>
+            <button
+              onClick={handleDebugUnlockAll}
+              className="px-3 py-1 text-xs bg-green-600 hover:bg-green-700 text-white rounded"
+            >
+              Unlock All Biomes
+            </button>
+            <button
+              onClick={handleDebugLog}
+              className="px-3 py-1 text-xs bg-blue-600 hover:bg-blue-700 text-white rounded"
+            >
+              Log State
+            </button>
+            <button
+              onClick={clearGameState}
+              className="px-3 py-1 text-xs bg-orange-600 hover:bg-orange-700 text-white rounded"
+            >
+              Clear & Reload
+            </button>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 };

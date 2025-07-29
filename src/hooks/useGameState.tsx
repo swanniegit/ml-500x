@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 import { GameState, UserProgress, Lesson } from '@/types';
-import { lessons } from '@/data/lessons';
+import { lessons, biomes } from '@/data/lessons';
 
 interface GameStateContextType {
   gameState: GameState;
@@ -11,6 +11,7 @@ interface GameStateContextType {
   completeLesson: () => void;
   earnBioLumens: (amount: number) => void;
   updateProgress: (progress: Partial<UserProgress>) => void;
+  clearGameState: () => void;
 }
 
 const GameStateContext = createContext<GameStateContextType | undefined>(undefined);
@@ -24,7 +25,7 @@ const initialState: GameState = {
     currentLesson: 1,
     bioLumens: 0,
     completedLessons: [],
-    unlockedBiomes: ['savanna'],
+    unlockedBiomes: ['savanna', 'forest'],
     totalProgress: 0
   },
   audioEnabled: true,
@@ -82,6 +83,7 @@ const gameReducer = (state: GameState, action: GameAction): GameState => {
       }
       
       const totalProgress = (completedLessons.length / lessons.length) * 100;
+      const unlockedBiomes = getUnlockedBiomes(completedLessons);
       
       return {
         ...state,
@@ -89,7 +91,8 @@ const gameReducer = (state: GameState, action: GameAction): GameState => {
           ...state.userProgress,
           completedLessons,
           totalProgress,
-          currentLesson: state.currentLesson.id + 1
+          currentLesson: state.currentLesson.id + 1,
+          unlockedBiomes
         }
       };
     
@@ -126,6 +129,29 @@ const gameReducer = (state: GameState, action: GameAction): GameState => {
     default:
       return state;
   }
+};
+
+// Helper function to check if a biome should be unlocked
+const shouldUnlockBiome = (biomeId: string, completedLessons: number[]): boolean => {
+  const biome = biomes.find(b => b.id === biomeId);
+  if (!biome) return false;
+  
+  // Check if all lessons in the previous biome are completed
+  const biomeIndex = biomes.findIndex(b => b.id === biomeId);
+  if (biomeIndex === 0) return true; // First biome is always unlocked
+  
+  const previousBiome = biomes[biomeIndex - 1];
+  if (!previousBiome) return false;
+  
+  // Check if all lessons in the previous biome are completed
+  return previousBiome.lessons.every(lessonId => completedLessons.includes(lessonId));
+};
+
+// Helper function to get unlocked biomes based on progress
+const getUnlockedBiomes = (completedLessons: number[]): string[] => {
+  return biomes
+    .filter(biome => shouldUnlockBiome(biome.id, completedLessons))
+    .map(biome => biome.id);
 };
 
 // Provider component
@@ -179,6 +205,11 @@ export const GameStateProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     dispatch({ type: 'UPDATE_PROGRESS', payload: progress });
   };
 
+  const clearGameState = () => {
+    localStorage.removeItem('neural-savanna-state');
+    window.location.reload();
+  };
+
   const value: GameStateContextType = {
     gameState: state,
     startGame,
@@ -187,7 +218,8 @@ export const GameStateProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     resumeGame,
     completeLesson,
     earnBioLumens,
-    updateProgress
+    updateProgress,
+    clearGameState
   };
 
   return (

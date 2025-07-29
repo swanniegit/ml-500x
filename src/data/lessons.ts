@@ -15,7 +15,7 @@ export const biomes: Biome[] = [
     description: 'Deep learning and advanced neural network architectures',
     color: '#16a34a',
     lessons: [6, 7, 8, 9, 10],
-    unlocked: false
+    unlocked: true
   },
   {
     id: 'mountain',
